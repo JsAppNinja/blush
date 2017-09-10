@@ -160,7 +160,7 @@ body#app #footer .nav-toggle-container { display: none !important; }
 /* line 97, ../sass/base.scss */
 #page { background-image: url('[object Object]/assets/dist/images/pixel_weave.jpg?1499188648'); }
 /* line 100, ../sass/base.scss */
-#page .page-title { background: #5c2a43; padding: 0 0 20px; }
+#page .page-title { background: #ff5f92; padding: 0 0 20px; }
 /* line 104, ../sass/base.scss */
 #page .page-title h1 { font-family: "Neutraface 2 Text"; font-style: italic; color: #ffffff; font-weight: 300; }
 /* line 113, ../sass/base.scss */
