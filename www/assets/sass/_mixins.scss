@@ -1,0 +1,42 @@
+@import "compass";
+@mixin bg-img($name) {
+    background-image: image-url($name);
+}
+@mixin bg-img-box($name) {
+    background-image: image-url($name);
+    background-repeat: no-repeat;
+    width: image-width($name);
+    height: image-height($name);
+}
+
+@mixin hide-text{
+    overflow:hidden;
+    text-indent:-9000px;
+    display:block;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+@mixin placeholder($color) {
+    &::-webkit-input-placeholder {
+        color:$color;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        color:$color;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        color:$color;
+    }
+
+    &:-ms-input-placeholder {
+        color:$color;
+    }
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}

@@ -1,0 +1,158 @@
+@import 'mixins';
+
+.std-form {
+    .form-control {
+        @include placeholder($color-purple-1);
+
+        font-weight:300;
+        font-size:18px;
+        height:38px;
+        color:$color-purple-1;
+        border:1px $color-yellow-1 solid;
+
+        &.error {
+            border:1px solid #B94A48;
+        }
+
+        &.datepicker {
+            padding:6px 12px;
+        }
+    }
+
+    textarea{
+        &.form-control {
+            height:auto;
+        }
+
+        &.short {
+            height:38px !important;
+        }
+    }
+
+    label.error {
+        font-weight:normal;
+        background-color:#F2DEDE;
+        border-color:#EED3D7;
+        color:#B94A48;
+        font-weight:300;
+        font-size:14px;
+    }
+
+    .date {
+        i.calendar {
+            color:$color-purple-7;
+            &:before {
+                color:$color-purple-7;
+            }
+        }
+    }
+}
+
+
+.datepicker-dropdown {
+    table {
+        thead {
+            background:$color-purple-8;
+            color: $color-purple-9;
+
+            tr {
+                th.dow {
+                    background: $color-purple-11;
+                    color: $color-white;
+                    @include border-radius(0);
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td.day {
+                    color: #333;
+
+                    &.active {
+                        background: $color-pink-1 !important;
+                        color:$color-white;
+                    }
+                }
+
+                td span.month {
+                    color: #333;
+
+                    &.active {
+                        background: $color-pink-1 !important;
+                        color:$color-white;
+                    }
+                }
+
+                td span.year {
+                    color: #333;
+
+                    &.active {
+                        background: $color-pink-1 !important;
+                        color:$color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gform_wrapper {
+    ul.gform_fields {
+        margin:0;
+        padding:0;
+        list-style:none;
+
+        li.gfield {
+            &.gfield_error {
+                .gfield_label, .ginput_container {
+                    margin-top:0;
+                }
+
+                .validation_message {
+                    padding:0;
+                    margin-top:0;
+                }
+            }
+        }
+    }
+
+    .gfield_admin_icons {
+        display:none;
+    }
+
+    .gfield_required {
+        color:red;
+        font-weight:300;
+    }
+
+    .ginput_container {
+        input[type="text"], input[type="tel"], input[type="number"], input[type="url"], input[type="email"], textarea, select {
+            @include placeholder($color-purple-1);
+            font-weight:300;
+            font-size:18px;
+            height:38px;
+            color:$color-purple-1;
+            border:1px $color-yellow-1 solid;
+            background: $color-yellow-11;
+            width:100%;
+            margin-bottom:10px;
+        }
+
+        textarea {
+            height:auto;
+
+            &.small {
+                height:100px;
+            }
+            &.medium {
+                height:200px;
+            }
+        }
+    }
+
+    div.validation_error {
+        font-size:inherit;
+        margin-bottom:10px;
+    }
+}

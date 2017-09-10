@@ -1,0 +1,23 @@
+paths:
+    migrations: %%PHINX_CONFIG_DIR%%/migrations
+
+environments:
+    default_migration_table: phinxlog
+    default_database: development
+
+    development:
+        adapter: mysql
+        host: %%PHINX_DB_HOST_DEV%%
+        name: %%PHINX_DB_NAME_DEV%%
+        user: %%PHINX_DB_USER_DEV%%
+        pass: %%PHINX_DB_PASS_DEV%%
+        port: 3306
+        charset: utf8
+    production:
+        adapter: mysql
+        host: halfslidevpc.czvoexoklzdt.us-west-2.rds.amazonaws.com
+        name: blush
+        user: blushdb
+        pass: 63Q@LWmUFbfB
+        port: 3306
+        charset: utf8

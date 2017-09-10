@@ -1,0 +1,33 @@
+# Intellij
+.idea/
+*.iml
+*.iws
+*.sass-cache/
+*.cache/
+
+# Wordpress
+www/wp-admin/
+www/wp-content/cache/
+www/wp-content/upgrade/
+www/wp-content/w3tc-config/
+www/wp-content/themes/twentyten/
+www/wp-content/themes/twentyeleven/
+www/wp-content/themes/twentywelve/
+www/wp-content/themes/twentythirteen/
+www/wp-content/themes/twentyfourteen/
+www/wp-content/themes/twentyfifteen/
+www/wp-includes/
+www/wp-content/uploads
+www/wp-content/themes/blush/custom.css
+
+www/app/application/logs
+www/app/vendor
+
+www/assets/stylesheets/*.css
+www/assets/uploads/
+
+node_modules
+npm-debug.log
+www/assets/dist
+www/app/application/views/includes/prod
+.tmp

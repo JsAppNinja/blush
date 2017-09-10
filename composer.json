@@ -1,0 +1,9 @@
+{
+    "require": {
+        "mailgun/mailgun-php": "~1.7.2",
+        "opentok/opentok": "2.2.x",
+        "stripe/stripe-php": "2.*",
+        "robmorgan/phinx": "0.4.*",
+        "plivo/plivo-php": "^1.1"
+    }
+}

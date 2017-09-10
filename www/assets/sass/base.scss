@@ -1,0 +1,204 @@
+@import "compass";
+@import "fonts";
+@import 'colors';
+@import 'bootstrap';
+@import 'mixins';
+
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+body {
+    background: $color-purple-1;
+    font-family: 'Neutraface 2 Text';
+    font-size: 16px;
+    font-weight: 300;
+
+    &#app {
+        #footer {
+            .nav-toggle-container {
+                display: none !important;
+            }
+        }
+    }
+}
+
+.inline {
+    display: inline-block;
+}
+
+#header {
+    height: 78px;
+    background: $color-white;
+    color: $color-purple-1;
+
+    .container {
+        position: relative;
+        min-height: 78px;
+    }
+
+    .brand {
+        @include bg-img-box('logo.png');
+        @include hide-text;
+        margin-top: 10px;
+    }
+
+    .btn-group {
+        margin-top: 30px;
+
+        #btn-get-started {
+            width: 200px;
+        }
+
+        #btn-login {
+            width: 120px;
+        }
+    }
+
+    #menu-top {
+        li {
+            a {
+                text-transform: uppercase;
+                min-height: 78px;
+                border-left: 1px $color-yellow-1 solid;
+                line-height: 78px;
+                color: $color-purple-1;
+                white-space: nowrap;
+                padding: 0 15px;
+
+                &:hover {
+                    background-color: $color-gray-2;
+                }
+            }
+
+            /* Signup button */
+            &.signup, &.signup:hover {
+                a {
+                    font-weight: bold;
+                    color: $color-white;
+                    padding: 0 20px;
+                    @include background(linear-gradient($color-blue-1, $color-blue-4));
+                }
+            }
+
+            /* Signup button */
+            &.login, &.login:hover {
+                a {
+                    font-weight: bold;
+                    padding: 0 20px;
+                    @include background(linear-gradient($color-white, $color-pink-10));
+                }
+            }
+        }
+    }
+}
+
+#page {
+    @include bg-img('pixel_weave.jpg');
+
+    .page-title {
+        background: $color-purple-1;
+        padding: 0 0 20px;
+
+        h1 {
+            font-family: "Neutraface 2 Text";
+            font-style: italic;
+            color: $color-white;
+            font-weight: 300;
+        }
+    }
+
+    .body {
+        .well {
+            background: $color-yellow-3;
+            border-color: $color-yellow-5;
+            &.well-pink {
+                background: $color-pink-9;
+                border-color: $color-pink-6;
+            }
+        }
+    }
+}
+
+/** FOOTER **/
+#footer {
+    color: $color-white;
+    padding: 30px 0;
+
+    a, a:active, a:hover {
+        color: $color-white;
+        text-transform: uppercase;
+    }
+
+    #menu-footer-menu li {
+        padding: 0;
+
+        &:after {
+            content: "|";
+            color: $color-pink-1;
+        }
+        &:last-child:after {
+            content: "";
+        }
+
+        a {
+            padding: 0 5px;
+        }
+    }
+
+    .brand {
+        @include bg-img-box('logo-footer.png');
+        margin: 20px auto 20px;
+        @include hide-text;
+    }
+
+    ul.social {
+        float: right;
+        li {
+            float: left;
+            margin-left: 10px;
+            a {
+                display: block !important;
+                height: 100%;
+            }
+        }
+
+        li.facebook {
+            @include bg-img-box('footer-facebook.png');
+            @include hide-text;
+        }
+        li.twitter {
+            @include bg-img-box('footer-twitter.png');
+            @include hide-text;
+        }
+        li.instagram {
+            @include bg-img-box('footer-instagram.png');
+            @include hide-text;
+        }
+        li.spotify {
+            @include bg-img-box('footer-spotify.png');
+            @include hide-text;
+        }
+
+        li.stripe {
+            @include bg-img-box('outline.png');
+            @include hide-text;
+            margin-top: 3px;
+        }
+    }
+}
+
+.gravity-modal {
+    .modal-header {
+        padding-bottom: 0;
+    }
+
+    .modal-body {
+        padding-top: 0;
+    }
+}
+
+.spacer {
+    height: 15px;
+}

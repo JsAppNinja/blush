@@ -1,0 +1,898 @@
+@import "compass";
+@import 'colors';
+@import 'mixins';
+
+@media screen and (min-width: 992px) {
+    #header {
+        #menu-top {
+            > li {
+                /* only decorate the blog item in the menu */
+                &#menu-item-1319 {
+                    &.current-menu-item, &.current_page_item, &.current_page_parent {
+                        a {
+                            background-color: $color-gray-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #header {
+        #menu-top {
+            > li {
+                a {
+                    padding: 0 10px;
+                }
+
+                /* only decorate the blog item in the menu */
+                &#menu-item-1319 {
+                    &.current-menu-item, &.current_page_item, &.current_page_parent {
+                        a {
+                            background-color: $color-gray-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #header {
+        border-top: 10px $color-purple-1 solid;
+        ul.nav {
+            float: none;
+            display: none;
+        }
+
+        #menu-top {
+            background: $color-purple-1;
+            height: 100%;
+            position: fixed;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            z-index: 1010;
+
+            li {
+                float: none;
+
+                a {
+                    border: 0;
+                    min-height: 40px;
+                    line-height: 40px;
+                    color: $color-yellow-2;
+                    border-bottom: 1px $color-purple-6 solid;
+
+                    &:hover, &:active, &:focus {
+                        background: transparent;
+                        color: $color-yellow-2;
+                    }
+                }
+
+                &.login, &.signup {
+                    a {
+                        background: $color-purple-6;
+                        color: $color-blue-1;
+                        border-bottom: 1px $color-purple-1 solid;
+                        font-weight: normal;
+
+                        &:hover, &:active, &:focus {
+                            background: transparent;
+                            color: $color-blue-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #page {
+        .section-title {
+            border: 0;
+        }
+    }
+
+    %extend_2 {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 5px;
+        width: 35px;
+        background: $color-purple-1;
+        position: absolute;
+        display: block;
+        content: '';
+        transition: all 500ms ease-in-out;
+    }
+
+    .nav-toggle {
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        display: none;
+        z-index: 2001;
+        cursor: pointer;
+        padding: 10px 35px 16px 0;
+        span {
+            @extend %extend_2;
+            &:before {
+                @extend %extend_2;
+                top: -10px;
+            }
+            &:after {
+                @extend %extend_2;
+                bottom: -10px;
+            }
+        }
+        &.active span {
+            background-color: transparent;
+            &:before {
+                top: 0;
+                background-color: $color-white;
+
+                transform: rotate(45deg);
+            }
+            &:after {
+                top: 0;
+                background-color: $color-white;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    #blog {
+        padding-bottom: 0;
+        .featured-post {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    #coaches {
+        height: auto !important;
+
+        #coach-slides {
+            height: auto !important;
+            width: auto;
+
+            .slide {
+                width: auto;
+                height: auto !important;
+            }
+        }
+    }
+
+    #get-started-mobile {
+        background: $color-purple-14;
+        padding-bottom: 0;
+        padding-top: 0;
+
+        .container {
+            @include bg-img('get-started-mobile.png');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 100% auto;
+
+            .pitch {
+                @include bg-img('get-started-mobile-speech.png');
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: 100% auto;
+                min-height: 185px;
+                max-width: 470px;
+                margin-top: -40px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h2 {
+                padding-top: 25px;
+                padding-right: 20px;
+                padding-left: 20px;
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            h5 {
+                font-size: 16px;
+                text-align: center;
+                padding-right: 20px;
+                padding-left: 20px;
+                font-weight: normal;
+                margin-top: 0;
+            }
+
+            .actions {
+                @include background-opacity($color-purple-1, 0.8);
+                margin: 0 -15px;
+                .btn {
+                    background: transparent;
+                    color: $color-pink-1;
+                    width: 49%;
+                    padding: 15px;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+
+    #footer {
+
+        .nav-toggle-container {
+            height: 65px;
+            position: relative;
+            background: $color-purple-6;
+
+            .nav-toggle {
+                span {
+                    background: $color-white;
+                    &:before, &:after {
+                        background: $color-white;
+                    }
+                }
+                &.active span {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .post {
+        .title {
+            h3 {
+                height: auto;
+                line-height: 30px;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .home {
+        #lede {
+            height: auto;
+            .lede-image {
+                background-size: 100%;
+                height: 300px;
+            }
+
+            .stripe {
+                position: static;
+                bottom: 0;
+
+                h4 {
+                    font-size: 20px;
+                }
+
+                .container {
+                    max-width: 100%;
+                    padding: 0 15px;
+                }
+
+                .btn-watch {
+                    font-size: 14px;
+                    padding: 5px;
+                    width: auto;
+                }
+
+                .btn-newsletter {
+                    font-size: 14px;
+                    padding: 5px;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    #get-started {
+        background: $color-purple-14;
+        height: auto;
+        padding-top: 20px;
+
+        .pitch {
+            width: auto;
+            float: none;
+            margin-bottom: 10px;
+            height: auto;
+
+            h2 {
+                color: $color-white;
+                br {
+                    display: none;
+                }
+            }
+
+            h5 {
+                color: $color-white;
+            }
+
+            .actions {
+                float: none;
+                width: auto;
+                text-align: center;
+                margin-left: 0;
+            }
+        }
+    }
+
+    #coaches {
+        #coach-slides {
+            .slide {
+                .coach {
+                    min-height: 460px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    #testimonials {
+        .testimonial {
+            width: 350px;
+            height: 150px;
+            background-size: 100%;
+            font-size: 12px;
+            line-height: 18px;
+
+            .author {
+                top: 85px;
+                right: 30px;
+            }
+
+            &.odd {
+                width: 350px;
+                height: 150px;
+                background-size: 100%;
+            }
+        }
+    }
+
+    #testimonial-slides {
+        height: 170px;
+    }
+
+    #feature-slides {
+        .feature {
+            text-align: center;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    #get-started-mobile {
+        .container {
+            background-position: center;
+
+            .pitch {
+                margin-bottom: 50px;
+
+                h2 {
+                    font-size: 26px;
+                }
+
+                h5 {
+                    padding-left: 35px;
+                    padding-right: 35px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        &.modal-open {
+            margin-right: 0;
+        }
+    }
+
+    #header {
+        .btn-group {
+            &.light-group a {
+                float: left;
+                width: 50%;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .home {
+        #lede {
+            height: auto;
+
+            .lede-image {
+                @include bg-img('lede-mobile.png');
+                background-size: 100%;
+                height: 370px;
+            }
+
+            .stripe {
+                background: rgba(255, 255, 255, 0.7);
+                position: static;
+                height: auto;
+                .container {
+                    //padding: 0;
+
+                    h4 {
+                        font-size: 16px;
+                        text-align: center;
+                        float: none;
+                    }
+
+                    .btn-watch {
+                        width: 50%;
+                        float: right;
+                        font-size: 16px;
+                    }
+
+                    .btn-newsletter {
+                        width: 50%;
+                        float: left;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .post {
+        .body, .featured-image, .meta {
+            padding: 10px 0;
+        }
+        .title {
+            padding: 0;
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h3 {
+                margin-top: 0;
+                height: auto;
+                line-height: 28px;
+                padding: 5px 20px;
+            }
+        }
+    }
+
+    #page {
+        overflow: hidden;
+        .title {
+            h3 {
+                font-size: 20px;
+                padding-left: 10px;
+            }
+        }
+
+        .page-title {
+            height: 74px;
+
+            h1.pull-left {
+                display: none;
+            }
+        }
+
+        .section-title {
+            height: auto;
+            margin-top: 0;
+
+            .frame {
+                height: auto;
+                width: auto;
+                background: transparent;
+                position: static;
+                margin: 0;
+
+                h2 {
+                    padding: 0;
+                }
+            }
+
+            .framex {
+                width: auto;
+                background-size: 100%;
+                margin-top: -20px;
+                max-width: 411px;
+                margin-left: auto;
+                margin-right: auto;
+
+                h2 {
+                    margin-top: 5px;
+                    font-size: 24px;
+                    padding-top: 25px;
+                }
+            }
+
+            .framey {
+                width: auto;
+                background-size: 100%;
+                margin-top: -20px;
+                max-width: 411px;
+                margin-left: auto;
+                margin-right: auto;
+
+                h2 {
+                    font-size: 24px;
+                    padding-top: 15px;
+                }
+            }
+
+            &.coaches {
+                padding-top: 30px;
+                @include bg-img('pixel_weave.jpg');
+            }
+        }
+
+        #why-blush {
+            padding-top: 20px;
+            position: relative;
+
+            .content {
+                @include bg-img('why_blush.png');
+                background-position: center bottom;
+                background-size: auto 300px;
+                background-repeat: no-repeat;
+                padding-bottom: 220px;
+            }
+
+            .stripe {
+                bottom: 0;
+                height: 28px;
+                box-shadow: 0;
+
+                .clouds {
+                    width: auto;
+                }
+            }
+        }
+
+        #coaching-vs-counseling {
+            padding-top: 20px;
+            .container {
+                padding-bottom: 30px;
+
+                .content {
+                    background: transparent;
+                }
+
+            }
+
+        }
+
+        .watch-button-mobile {
+            @include bg-img-box('moms-dad-mobile.png');
+            @include hide-text;
+            position: absolute;
+            right: 0;
+            bottom: -50px;
+            z-index: 99;
+        }
+
+        .watch-button-kxan-mobile {
+            @include bg-img-box('kxan-mobile.png');
+            @include hide-text;
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            z-index: 99;
+        }
+    }
+
+    #how-it-works {
+        .section-block {
+            .content {
+                padding-left: 0;
+                background-size: 70px;
+                margin-bottom: 20px;
+
+                h4 {
+                    font-weight: 300;
+                    padding-left: 80px;
+                    min-height: 70px;
+                    line-height: 70px;
+                }
+
+                p {
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    #plans, #pricing {
+        .title {
+            padding-bottom: 20px;
+            overflow: hidden;
+
+            .inner {
+                h3 {
+                    margin-bottom: 40px;
+                    float: none;
+                }
+            }
+        }
+        .blush-journal {
+            font-size: 14px;
+            padding-left: 25px;
+            background-size: 25px;
+            margin: 0;
+        }
+
+        .video-session {
+            font-size: 14px;
+            padding-left: 25px;
+            background-size: 25px;
+            margin: 0;
+        }
+    }
+
+    #modal-video {
+        .modal-dialog {
+            width: auto;
+
+            .modal-body {
+                position: relative;
+                padding-bottom: 56.25%;
+                padding-top: 30px;
+                height: 0;
+                overflow: hidden;
+
+                iframe, object, embed {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    #testimonials-mobile {
+        .testimonial {
+            width: auto;
+
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        button {
+            background: $color-pink-1;
+            color: $color-white;
+            box-shadow: 4px 4px 0 $color-blue-5;
+        }
+    }
+
+    #footer {
+        padding: 0;
+        .small {
+            font-size: 12px;
+        }
+    }
+
+    #header {
+        .btn-group {
+            &.light-group {
+                float: none !important;
+            }
+        }
+
+        #logout-link {
+            margin-right: 15px;
+        }
+    }
+
+    #dashboard {
+        &.counselor {
+            #sidebar {
+                .section {
+                    &.attached-top {
+                        margin-top: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        margin-bottom: 30px;
+                        border-bottom: 1px $color-yellow-1 solid;
+                        border-top: 1px $color-yellow-1 solid;
+                    }
+                }
+            }
+        }
+
+        #dashboard-controls {
+            position: static;
+            top: auto;
+            float: none !important;
+            margin-bottom: 20px;
+
+            .btn {
+                width: 50%;
+                box-sizing: border-box;
+                font-size: 16px;
+                line-height: 40px;
+            }
+        }
+
+        #events {
+            padding: 0 15px;
+
+            .event {
+                .date-title {
+                    .col-lg-11 {
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        #conversations {
+            #message-list {
+                margin: 0 15px;
+
+            }
+
+            #conversation-selector {
+                font-size: 18px;
+                line-height: 24px;
+                height: 40px;
+            }
+        }
+    }
+
+    #sidebar {
+        .white-arrow {
+            display: none !important;
+        }
+
+        .brown-arrow {
+            width: 100%;
+            height: auto;
+            background: transparent;
+            margin: 10px 0;
+
+            .btn {
+                @include border-radius(4px);
+                width: 100%;
+            }
+        }
+    }
+
+    #my-account-container, #customer, #message {
+        padding: 0 15px;
+    }
+
+    body#admin {
+        #header {
+            padding: 0;
+
+            #logout-link {
+                margin-right: 15px;
+            }
+        }
+
+        #sidebar {
+            min-height: 0;
+
+            li {
+                a {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .table-responsive {
+        border-color: $color-purple-6;
+    }
+
+    .blog-list {
+        .blog-item {
+            .title {
+                height: auto;
+                min-height: 60px;
+            }
+        }
+
+
+    }
+
+    .newsletter {
+        .gform_body {
+            width: 60%;
+
+            .ginput_container {
+                margin-top: 0 !important;
+            }
+        }
+
+        .gform_footer {
+            width: 40%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .home {
+        #lede {
+            .lede-image {
+                height: 280px;
+            }
+
+            .stripe {
+                .container {
+                    padding: 0;
+
+                    .btn-newsletter, .btn-watch {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    #testimonials-mobile {
+
+        .testimonial {
+            p {
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+    }
+    #get-started-mobile {
+
+        .container {
+
+            h2 {
+                padding-top: 18px;
+            }
+
+            h5 {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .home {
+        #lede {
+            .stripe {
+                .container {
+                    h4 {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    #how-it-works {
+        .section-block {
+            .content {
+                h4 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

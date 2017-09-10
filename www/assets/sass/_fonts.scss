@@ -1,0 +1,37 @@
+@import "compass/css3";
+
+@include font-face("Neutraface 2 Text",
+    font-files("neutra2text-light.woff", "neutra2text-light.ttf", "neutra2text-light.svg"),
+    "neutra2text-light.eot", normal, normal);
+
+@include font-face("Neutraface 2 Text",
+    font-files("neutra2text-lightitalic.woff", "neutra2text-lightitalic.ttf", "neutra2text-lightitalic.svg"),
+    "neutra2text-lightitalic.eot", normal, italic);
+
+@include font-face("Neutraface 2 Text",
+    font-files("neutra2text-book.woff", "neutra2text-book.ttf", "neutra2text-book.svg"),
+    "neutra2text-book.eot", 300, normal);
+
+@include font-face("Neutraface 2 Text",
+    font-files("neutra2text-bookitalic.woff", "neutra2text-bookitalic.ttf", "neutra2text-bookitalic.svg"),
+    "neutra2text-bookitalic.eot", 300, italic);
+
+@include font-face("Neutraface 2 Text",
+    font-files("neutra2text-demi.woff", "neutra2text-demi.ttf", "neutra2text-demi.svg"),
+    "neutra2text-demi.eot", 500, normal);
+
+@include font-face("Neutraface 2 Text",
+    font-files("neutra2text-demiitalic.woff", "neutra2text-demiitalic.ttf", "neutra2text-demiitalic.svg"),
+    "neutra2text-demiitalic.eot", 500, italic);
+
+@include font-face("Neutraface 2 Text",
+    font-files("neutra2text-bold.woff", "neutra2text-bold.ttf", "neutra2text-bold.svg"),
+    "neutra2text-book.eot", bold, normal);
+
+@include font-face("Neutraface 2 Text",
+    font-files("neutra2text-bolditalic.woff", "neutra2text-bolditalic.ttf", "neutra2text-bolditalic.svg"),
+    "neutra2text-bookitalic.eot", bold, italic);
+
+@include font-face("Archer",
+    font-files("Archer-MediumItalic.woff", "Archer-MediumItalic.otf", "Archer-MediumItalic.ttf", "Archer-MediumItalic.svg"),
+    "Archer-MediumItalic.eot", 500, italic);

@@ -1,0 +1,2 @@
+<p>You will be assigned a blush coach shortly. Once you have been assigned a coach, you will be prompted to set up your introductory video chat with your counselor.</p>
+<p>In the mean time, feel free to look around and fill out your profile.</p>

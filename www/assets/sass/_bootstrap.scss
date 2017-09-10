@@ -1,0 +1,219 @@
+@import "compass/css3/border-radius";
+
+.btn {
+    @include border-radius(0);
+    text-transform: uppercase;
+    font-weight: normal;
+    border: 0;
+}
+
+a, a:hover, a:active {
+    color: $color-pink-1;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Neutraface 2 Text';
+}
+
+h3, .h3, h4, .h4 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+small, .small {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.alert-warning {
+    a {
+        color: #B94A48;
+        text-decoration: underline;
+    }
+}
+
+.form-control {
+    @include border-radius(0);
+    font-weight: 300;
+
+    &:focus {
+        box-shadow: none;
+        border: inherit;
+    }
+}
+
+.btn {
+    font-weight: 300;
+}
+
+.btn-sm {
+    font-weight: 500;
+}
+
+.btn-md {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 8px 20px;
+}
+
+.btn-lg {
+    font-size: 20px;
+    padding: 10px 22px;
+}
+
+.btn-yellow, .btn-yellow:hover, .btn-yellow:active, .btn-yellow:focus {
+    background-color: $color-yellow-6;
+    color: $color-white;
+}
+
+.btn-lt-brown, .btn-lt-brown:hover, .btn-lt-brown:active, .btn-lt-brown:focus {
+    background-color: $color-yellow-7;
+    color: $color-white;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: $color-blue-2;
+    color: $color-white;
+    font-weight: bold;
+    @include border-radius(5px);
+
+    &.disabled {
+        background-color: $color-yellow-4;
+        border: 1px solid $color-yellow-5;
+    }
+}
+
+.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary.active[disabled], fieldset[disabled] .btn-primary.active {
+    background-color: $color-blue-3;
+}
+
+.btn-blue, .btn-blue:hover, .btn-blue:active, .btn-blue:focus {
+    background-color: $color-blue-1;
+    color: $color-white;
+}
+
+.btn-purple, .btn-purple:hover, .btn-purple:active, .btn-purple:focus {
+    background-color: $color-purple-1;
+    color: $color-white;
+}
+
+.btn-purple-2, .btn-purple-2:hover, .btn-purple-2:active, .btn-purple-2:focus {
+    background-color: $color-purple-1;
+    color: $color-white;
+}
+
+.btn-pink, .btn-pink:hover, .btn-pink:active, .btn-pink:focus {
+    background-color: $color-pink-1;
+    color: $color-white;
+}
+
+.btn-yellow, .btn-yellow:hover, .btn-yellow:active, .btn-yellow:focus {
+    background-color: $color-yellow-12;
+    color: $color-white;
+}
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child) {
+    border: 1px solid $color-purple-4;
+    border-radius: 0 5px 5px 0;
+    height: 38px;
+}
+
+.badge {
+    font-size: 12px;
+    line-height: 1;
+    position: relative;
+    top: -8px;
+    padding: 3px;
+    border: 1px solid $color-white;
+
+    &.badge-pink {
+        background: $color-pink-1;
+    }
+}
+
+.img-thumbnail.img-circle {
+    background: $color-yellow-1;
+    border: 1px $color-yellow-1 solid;
+}
+
+.label-pink {
+    background: $color-pink-1;
+}
+
+.modal {
+    color: $color-purple-5;
+
+    .modal-content {
+        background: $color-yellow-9;
+        border: 3px $color-yellow-1 solid;
+        @include border-radius(3px);
+
+        .modal-header {
+            border-bottom: 0;
+            h2, h3 {
+                color: $color-pink-1;
+            }
+            h4 {
+                color: $color-purple-1;
+            }
+        }
+
+        .modal-footer {
+            background: $color-yellow-10;
+            position: relative;
+            min-height: 35px;
+        }
+
+        .gform_footer {
+            display: none;
+        }
+    }
+}
+
+.datepicker {
+    @include border-radius(0);
+}
+
+.form-group.date {
+    position: relative;
+
+    i.calendar {
+        position: absolute;
+        top: 5px;
+        right: -15px;
+    }
+
+    &.with-label {
+        i.calendar {
+            top: 38px;
+        }
+    }
+}
+
+.nav-pills {
+    margin-bottom: 10px;
+
+    > li {
+        a {
+            padding: 10px;
+            color: $color-purple-1;
+        }
+
+        &.active {
+            a, a:hover, a:focus {
+                background: $color-purple-1;
+                color: $color-white;
+            }
+        }
+
+        &:hover {
+            a {
+                background: $color-pink-8;
+            }
+        }
+    }
+}

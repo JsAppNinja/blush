@@ -1,0 +1,87 @@
+.dataTables_wrapper {
+    background: $color-purple-7;
+
+    .dataTables_length {
+        float:left;
+        width:200px;
+        padding:10px;
+
+        label {
+            color:$color-purple-6;
+            font-weight:300;
+        }
+
+        select {
+            background: $color-purple-12;
+            color:$color-purple-5;
+            font-weight:500;
+            border:1px $color-purple-1 solid;
+        }
+    }
+
+    .dataTables_filter {
+        float:right;
+        width:400px;
+        text-align:right;
+        padding:10px 10px 5px 10px;
+        label {
+            color: $color-purple-6;
+            font-weight:300;
+        }
+
+        input {
+            background:$color-purple-11;
+            border:1px $color-purple-1 solid;
+            padding:3px;
+            color:$color-purple-5;
+        }
+    }
+
+    table {
+        clear:both;
+        width:100%;
+        border-top:1px $color-purple-6 solid;
+        background: $color-purple-1;
+
+        tr {
+            th, td {
+                padding:5px;
+                line-height:30px;
+                border-bottom:1px $color-purple-7 solid;
+            }
+            th {
+                color: $color-purple-5;
+                font-weight:bold;
+
+                &.sorting, &.sorting_asc, &.sorting_desc {
+                    cursor:pointer;
+                }
+
+            }
+            td {
+                cursor:pointer;
+            }
+
+            &:hover {
+                td {
+                    background:$color-purple-7;
+                }
+            }
+        }
+    }
+
+    .dataTables_info {
+        float:left;
+        font-size:14px;
+        margin:5px 0 0 10px;
+    }
+
+    .dataTables_paginate {
+        float:right;
+
+        a {
+            display:inline-block;
+            padding:10px;
+        }
+    }
+}
