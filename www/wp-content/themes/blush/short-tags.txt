@@ -1,1 +1,0 @@
-[section_break] = Creates a section break in the page to split
