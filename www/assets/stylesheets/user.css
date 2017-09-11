@@ -84,7 +84,7 @@
 /* line 43, ../sass/user.scss */
 #login-box .form-group { overflow: hidden; }
 /* line 46, ../sass/user.scss */
-#login-box .form-group .prefix { width: 60px; text-align: center; display: block; float: left; height: 54px; font-size: 10px; line-height: 34px; background: #a68c99; }
+#login-box .form-group .prefix { width: 60px; text-align: center; display: block; float: left; height: 54px; font-size: 10px; line-height: 34px; background: #ff5f92; }
 /* line 56, ../sass/user.scss */
 #login-box .form-group .prefix i { height: 58px; display: block; }
 /* line 60, ../sass/user.scss */
@@ -92,7 +92,7 @@
 /* line 69, ../sass/user.scss */
 #login-box .form-group input { width: 270px; font-size: 24px; line-height: 54px; float: left; height: 54px; display: block; }
 /* line 80, ../sass/user.scss */
-#login-box button i { padding-left: 10px; height: 33px; color: #a8ebf0; }
+#login-box button i { padding-left: 10px; height: 33px; color: #fff; }
 /* line 86, ../sass/user.scss */
 #login-box button i:before { font-size: 20px; line-height: 33px; color: #a8ebf0; }
 /* line 94, ../sass/user.scss */
