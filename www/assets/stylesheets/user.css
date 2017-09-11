@@ -1,5 +1,5 @@
 /* line 4, ../sass/_form.scss */
-.std-form .form-control { font-weight: 300; font-size: 18px; height: 38px; color: #5c2a43; border: 1px #f2dfc9 solid; }
+.std-form .form-control { font-weight: 300; font-size: 18px; height: 38px; color: #000; border: 1px #f2dfc9 solid; }
 /* line 22, ../sass/_mixins.scss */
 .std-form .form-control::-webkit-input-placeholder { color: #5c2a43; }
 /* line 26, ../sass/_mixins.scss */
@@ -73,7 +73,7 @@
 /* line 8, ../sass/user.scss */
 #header #logout-link { position: absolute; right: 0; top: 10px; font-size: 14px; }
 /* line 16, ../sass/user.scss */
-#header .btn-group.light-group { border-width: 1px 1px 0 0; border-color: #f2dfc9; border-style: solid; }
+#header .btn-group.light-group { border-width: 1px 1px 0 0; /*border-color: #f2dfc9; */border-style: solid; }
 /* line 21, ../sass/user.scss */
 #header .btn-group.light-group a { background: #ffffff; border-width: 0 0 0 1px; border-color: #000; border-style: solid; color: #000; z-index: 1 !important; }
 /* line 29, ../sass/user.scss */
@@ -124,7 +124,7 @@
 
 /** SIDEBAR **/
 /* line 163, ../sass/user.scss */
-#sidebar .section { padding-top: 0; border: 1px #ff5f92 solid; text-align: center; color: #5c2a43; background: #ffffff; }
+#sidebar .section { padding-top: 0; /*border: 1px #ff5f92 solid;*/ text-align: center; color: #5c2a43; background: #ffffff; }
 /* line 170, ../sass/user.scss */
 #sidebar .section.no-top { border-top: 0; }
 /* line 174, ../sass/user.scss */
