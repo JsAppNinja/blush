@@ -159,7 +159,7 @@ body#app #footer .nav-toggle-container { display: none !important; }
 
 /* line 97, ../sass/base.scss */
 /*#page { background-image: url('/assets/dist/images/pixel_weave.jpg?1499188648'); }*/
-#page { background: #000; }
+#page { background: #fff; }
 /* line 100, ../sass/base.scss */
 #page .page-title { background: #ff5f92; padding: 0 0 20px; }
 /* line 104, ../sass/base.scss */
