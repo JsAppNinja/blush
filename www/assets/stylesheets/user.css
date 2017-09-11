@@ -124,7 +124,7 @@
 
 /** SIDEBAR **/
 /* line 163, ../sass/user.scss */
-#sidebar .section { padding-top: 0; border: 1px #f2dfc9 solid; text-align: center; color: #5c2a43; background: #ffffff; }
+#sidebar .section { padding-top: 0; border: 1px #ff5f92 solid; text-align: center; color: #5c2a43; background: #ffffff; }
 /* line 170, ../sass/user.scss */
 #sidebar .section.no-top { border-top: 0; }
 /* line 174, ../sass/user.scss */
@@ -166,7 +166,7 @@
 /* line 258, ../sass/user.scss */
 #sidebar .section .nav li a i { color: #e7d2bd; padding-left: 32px; }
 /* line 262, ../sass/user.scss */
-#sidebar .section .nav li a i:before { color: #e7d2bd; line-height: 0; }
+#sidebar .section .nav li a i:before { color: #000; line-height: 0; }
 /* line 273, ../sass/user.scss */
 #sidebar .white-arrow { background-image: url('[object Object]/assets/dist/images/sidebar-bottom-white.png?1499188648'); background-repeat: no-repeat; width: 240px; height: 90px; }
 /* line 276, ../sass/user.scss */
@@ -622,7 +622,7 @@
 .fc .fc-event-container .fc-event-title { display: none; }
 
 /* line 1660, ../sass/user.scss */
-#main-calendar, .fc.calendar { background: #ffffff; border: 1px #f2dfc9 solid; padding: 10px; }
+#main-calendar, .fc.calendar { background: #ffffff;  color: #000; border: 1px #f2dfc9 solid; padding: 10px; }
 /* line 1667, ../sass/user.scss */
 #main-calendar .fc-header .fc-header-title h2, .fc.calendar .fc-header .fc-header-title h2 { font-size: 26px; line-height: 40px; }
 /* line 1676, ../sass/user.scss */
