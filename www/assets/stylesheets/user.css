@@ -108,7 +108,7 @@
 /* line 115, ../sass/user.scss */
 #page .body { font-size: 18px; line-height: 26px; color: #ac738c; padding: 20px 0 30px; color: #fff; min-height: 500px; }
 /* line 124, ../sass/user.scss */
-#page .user-meta { background: #fff6eb; border-top: 2px #f2dfc9 solid; border-bottom: 1px #f2dfc9 solid; color: #5c2a43; margin: 20px 0; }
+#page .user-meta { background: #ff5f92; border-top: 2px #ff5f92 solid; border-bottom: 1px #ff5f92 solid; color: #fff; margin: 20px 0; }
 /* line 131, ../sass/user.scss */
 #page .user-meta .col { min-height: 42px; padding: 5px 0; }
 /* line 136, ../sass/user.scss */
