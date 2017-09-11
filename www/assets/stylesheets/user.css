@@ -424,7 +424,7 @@
 /* line 1032, ../sass/user.scss */
 #dashboard #messages .btn i, #dashboard #messages .btn .caret { border-top-color: #ffffff; border-bottom-color: #ffffff; }
 /* line 1038, ../sass/user.scss */
-#dashboard #messages textarea { border: 0; color: #5c2a43; padding: 20px; height: 200px; font-size: 16px; line-height: 22px; box-shadow: none !important; }
+#dashboard #messages textarea { color: #5c2a43; padding: 20px; height: 200px; font-size: 16px; line-height: 22px; box-shadow: none !important; }
 /* line 1048, ../sass/user.scss */
 #dashboard #messages .submit-container { background: #fcf2e6; border-top: 1px #9B9B9B solid; padding: 10px; margin: 0 -15px 20px; }
 /* line 1055, ../sass/user.scss */
@@ -438,7 +438,7 @@
 /* line 1074, ../sass/user.scss */
 #dashboard #messages .message .col-lg-10 { width: 87.333%; }
 /* line 1078, ../sass/user.scss */
-#dashboard #messages .message .content, #dashboard #messages .message .date { color: #ac738c; font-size: 16px; line-height: 24px; }
+#dashboard #messages .message .content, #dashboard #messages .message .date { color: #4A4A4A; font-size: 16px; line-height: 24px; }
 /* line 1088, ../sass/user.scss */
 #dashboard.counselor #sidebar { margin-top: 0; }
 /* line 1092, ../sass/user.scss */
@@ -486,11 +486,11 @@
 /* line 1224, ../sass/user.scss */
 #dashboard #conversations #conversation-list { border: 1px #9B9B9B solid; border-right: 0; border-bottom: 0; background: #faf0e4; float: left; }
 /* line 1231, ../sass/user.scss */
-#dashboard #conversations #conversation-list .conversation { cursor: pointer; border-bottom: 1px #9B9B9B solid; }
+#dashboard #conversations #conversation-list .conversation { cursor: pointer; border-bottom: 1px #9B9B9B solid; background-color: #9B9B9B;}
 /* line 1234, ../sass/user.scss */
-#dashboard #conversations #conversation-list .conversation.even { background: #f5e8da; }
+#dashboard #conversations #conversation-list .conversation.even { background: #C3C3C3; }
 /* line 1238, ../sass/user.scss */
-#dashboard #conversations #conversation-list .conversation.active { background: #ffffff; }
+#dashboard #conversations #conversation-list .conversation.active { background: #000; color: #ffffff; }
 /* line 1242, ../sass/user.scss */
 #dashboard #conversations #conversation-list .conversation .badge { position: absolute; top: 10px; right: 0; }
 /* line 1249, ../sass/user.scss */
@@ -499,8 +499,9 @@
 #dashboard #conversations #conversation-list img { margin-top: 10px; border: 0; }
 /* line 1260, ../sass/user.scss */
 #dashboard #conversations #conversation-list h4 { text-transform: none; font-size: 16px; margin-bottom: 5px; }
+#dashboard #conversations #conversation-list .active h4 { color: #fff;}
 /* line 1265, ../sass/user.scss */
-#dashboard #conversations #conversation-list .date { color: #ac738c; font-size: 14px; margin-top: 5px; }
+#dashboard #conversations #conversation-list .date { color: #fff; font-size: 14px; margin-top: 5px; font-weight: 800; }
 /* line 1271, ../sass/user.scss */
 #dashboard #conversations #conversation-list .excerpt { color: #ac738c; font-size: 14px; line-height: 20px; }
 /* line 1278, ../sass/user.scss */
