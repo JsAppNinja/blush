@@ -209,7 +209,7 @@ body#app #footer .nav-toggle-container { display: none !important; }
 /* line 202, ../sass/base.scss */
 .spacer { height: 15px; }
 
-.nav-pills>li a {color: #fff;}
+.nav-pills>li a {color: #000;}
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {

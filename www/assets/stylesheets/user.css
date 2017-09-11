@@ -1,5 +1,5 @@
 /* line 4, ../sass/_form.scss */
-.std-form .form-control { font-weight: 300; font-size: 18px; height: 38px; color: #000; border: 1px #f2dfc9 solid; }
+.std-form .form-control { font-weight: 300; font-size: 18px; height: 38px; color: #000; border: 1px #F4F4F4 solid; }
 /* line 22, ../sass/_mixins.scss */
 .std-form .form-control::-webkit-input-placeholder { color: #5c2a43; }
 /* line 26, ../sass/_mixins.scss */
@@ -109,7 +109,13 @@
 /* line 115, ../sass/user.scss */
 #page .body { font-size: 18px; line-height: 26px; color: #F9F9F9; padding: 20px 0 30px; color: #000; min-height: 500px; background-color: #F4F4F4; }
 /* line 124, ../sass/user.scss */
-#page .user-meta { background: #ff5f92; border-top: 2px #ff5f92 solid; border-bottom: 1px #ff5f92 solid; color: #fff; margin: 20px 0; }
+#page .user-meta {
+    background: #C3C3C3;
+    border-top: 2px #4A4A4A solid;
+    border-bottom: 1px #9B9B9B solid;
+    color: #fff;
+    margin: 20px 0;
+}
 /* line 131, ../sass/user.scss */
 #page .user-meta .col { min-height: 42px; padding: 5px 0; }
 /* line 136, ../sass/user.scss */
@@ -155,7 +161,7 @@
 /* line 226, ../sass/user.scss */
 #sidebar .section .counselor span { margin: 8px 10px 0 0; display: block; float: left; width: 140px; text-align: left; font-size: 18px; }
 /* line 237, ../sass/user.scss */
-#sidebar .section .nav li { text-align: left; border-top: 1px #f2dfc9 solid; }
+#sidebar .section .nav li { text-align: left; border-top: 1px #F4F4F4 solid; }
 /* line 241, ../sass/user.scss */
 #sidebar .section .nav li a { color: #000; padding: 15px 12px; text-transform: uppercase; }
 /* line 246, ../sass/user.scss */
