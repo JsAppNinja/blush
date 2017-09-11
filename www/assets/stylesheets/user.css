@@ -169,7 +169,7 @@
 /* line 262, ../sass/user.scss */
 #sidebar .section .nav li a i:before { color: #000; line-height: 0; }
 /* line 273, ../sass/user.scss */
-#sidebar .white-arrow { background-image: url('/assets/dist/images/sidebar-bottom-white.png?1499188648'); background-repeat: no-repeat; width: 240px; height: 90px; display: none:  !important; }
+#sidebar .white-arrow { background-image: url('/assets/dist/images/sidebar-bottom-white.png?1499188648'); background-repeat: no-repeat; width: 240px; height: 90px; display: none !important; }
 /*#sidebar .white-arrow { background-image: url('/assets/dist/images/sidebar-bottom-white.png?1499188648'); background-repeat: no-repeat; width: 240px; height: 90px; }*/
 /* line 276, ../sass/user.scss */
 #sidebar .brown-arrow { background-image: url('/assets/dist/images/sidebar-bottom-brown.png?1499188648'); background-repeat: no-repeat; width: 240px; height: 91px; text-align: center; }
