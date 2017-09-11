@@ -52,7 +52,7 @@ small, .small { font-size: 14px; line-height: 20px; }
 .btn-lt-brown, .btn-lt-brown:hover, .btn-lt-brown:active, .btn-lt-brown:focus { background-color: #efe0d0; color: #ffffff; }
 
 /* line 78, ../sass/_bootstrap.scss */
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus { background-color: #24c2ce; color: #ffffff; font-weight: bold; border-radius: 5px; }
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus { background-color: #ff5f92; color: #ffffff; font-weight: bold; border-radius: 0px; }
 /* line 84, ../sass/_bootstrap.scss */
 .btn-primary.disabled, .btn-primary:hover.disabled, .btn-primary:active.disabled, .btn-primary:focus.disabled { background-color: #e7d2bd; border: 1px solid #c4b3a1; }
 
@@ -171,7 +171,7 @@ body#app #footer .nav-toggle-container { display: none !important; }
 
 /** FOOTER **/
 /* line 125, ../sass/base.scss */
-#footer { color: #ffffff; padding: 30px 0; }
+#footer { color: #ffffff; padding: 30px 0; background-color: #ff5f92;}
 /* line 129, ../sass/base.scss */
 #footer a, #footer a:active, #footer a:hover { color: #ffffff; text-transform: uppercase; }
 /* line 134, ../sass/base.scss */
@@ -217,4 +217,4 @@ body#app #footer .nav-toggle-container { display: none !important; }
   background-color: #ff5f92;
   border-radius: 0;
 }
-.nav>li>a:focus, .nav>li>a:hover {color: #ff5f92;}
+.nav>li>a:focus, .nav>li>a:hover {color: #fff; background-color: #ff5f92; border-radius: 0;}

@@ -19,9 +19,9 @@
 /* line 32, ../sass/_form.scss */
 .std-form label.error { font-weight: normal; background-color: #F2DEDE; border-color: #EED3D7; color: #B94A48; font-weight: 300; font-size: 14px; }
 /* line 42, ../sass/_form.scss */
-.std-form .date i.calendar { color: #744057; }
+.std-form .date i.calendar { color: #000; }
 /* line 44, ../sass/_form.scss */
-.std-form .date i.calendar:before { color: #744057; }
+.std-form .date i.calendar:before { color: #000; }
 
 /* line 54, ../sass/_form.scss */
 .datepicker-dropdown table thead { background: #491f35; color: #905a72; }
