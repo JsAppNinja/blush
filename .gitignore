@@ -28,6 +28,5 @@ www/assets/uploads/
 
 node_modules
 npm-debug.log
-www/assets/dist
-www/app/application/views/includes/prod
+
 .tmp
