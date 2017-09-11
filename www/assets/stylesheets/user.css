@@ -75,9 +75,9 @@
 /* line 16, ../sass/user.scss */
 #header .btn-group.light-group { border-width: 1px 1px 0 0; border-color: #f2dfc9; border-style: solid; }
 /* line 21, ../sass/user.scss */
-#header .btn-group.light-group a { background: #ffffff; border-width: 0 0 0 1px; border-color: #f2dfc9; border-style: solid; color: #5c2a43; z-index: 1 !important; }
+#header .btn-group.light-group a { background: #ffffff; border-width: 0 0 0 1px; border-color: #000; border-style: solid; color: #000; z-index: 1 !important; }
 /* line 29, ../sass/user.scss */
-#header .btn-group.light-group a.active { background: #000; box-shadow: none; }
+#header .btn-group.light-group a.active { background: #000; color: #fff; box-shadow: none; }
 
 /* line 39, ../sass/user.scss */
 #login-box { margin-top: 40px; margin-bottom: 30px; }
@@ -106,7 +106,7 @@
 /* line 110, ../sass/user.scss */
 #page .submit-container .alert { margin-right: 20px; padding: 11px 15px; }
 /* line 115, ../sass/user.scss */
-#page .body { font-size: 18px; line-height: 26px; color: #ac738c; padding: 20px 0 30px; color: #5c2a43; min-height: 500px; }
+#page .body { font-size: 18px; line-height: 26px; color: #ac738c; padding: 20px 0 30px; color: #fff; min-height: 500px; }
 /* line 124, ../sass/user.scss */
 #page .user-meta { background: #fff6eb; border-top: 2px #f2dfc9 solid; border-bottom: 1px #f2dfc9 solid; color: #5c2a43; margin: 20px 0; }
 /* line 131, ../sass/user.scss */
@@ -156,9 +156,9 @@
 /* line 237, ../sass/user.scss */
 #sidebar .section .nav li { text-align: left; border-top: 1px #f2dfc9 solid; }
 /* line 241, ../sass/user.scss */
-#sidebar .section .nav li a { color: #c4b3a1; padding: 15px 12px; text-transform: uppercase; }
+#sidebar .section .nav li a { color: #000; padding: 15px 12px; text-transform: uppercase; }
 /* line 246, ../sass/user.scss */
-#sidebar .section .nav li a:hover, #sidebar .section .nav li a.active { background: #5c2a43; color: #ffffff; }
+#sidebar .section .nav li a:hover, #sidebar .section .nav li a.active { background: #ff5f92; color: #ffffff; }
 /* line 250, ../sass/user.scss */
 #sidebar .section .nav li a:hover i, #sidebar .section .nav li a.active i { color: #ffffff; }
 /* line 252, ../sass/user.scss */
