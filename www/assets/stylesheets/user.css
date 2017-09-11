@@ -90,17 +90,17 @@
 /* line 60, ../sass/user.scss */
 #login-box .form-group .prefix i:before { font-size: 30px; line-height: 58px; display: block; left: 14px; }
 /* line 69, ../sass/user.scss */
-#login-box .form-group input { width: 270px; font-size: 24px; line-height: 54px; float: left; height: 54px; display: block; }
+#login-box .form-group input { width: 270px; font-size: 24px; line-height: 54px; float: left; height: 54px; display: block; background-color: #fff;}
 /* line 80, ../sass/user.scss */
 #login-box button i { padding-left: 10px; height: 33px; color: #fff; }
 /* line 86, ../sass/user.scss */
-#login-box button i:before { font-size: 20px; line-height: 33px; color: #a8ebf0; }
+#login-box button i:before { font-size: 20px; line-height: 33px; color: #fff; }
 /* line 94, ../sass/user.scss */
 #login-box.forgot { margin-top: 20px; }
 /* line 97, ../sass/user.scss */
 #login-box.forgot .form-group { margin-top: 20px; margin-bottom: 20px; }
 /* line 101, ../sass/user.scss */
-#login-box.forgot .form-group input { width: 450px; }
+#login-box.forgot .form-group input { width: 450px; background-color: #fff;}
 
 /** PAGE **/
 /* line 110, ../sass/user.scss */
