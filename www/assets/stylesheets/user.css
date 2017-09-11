@@ -110,7 +110,7 @@
 #page .body { font-size: 18px; line-height: 26px; color: #F9F9F9; padding: 20px 0 30px; color: #000; min-height: 500px; background-color: #F4F4F4; }
 /* line 124, ../sass/user.scss */
 #page .user-meta {
-    background: #C3C3C3;
+    background: #000;
     border-top: 2px #4A4A4A solid;
     border-bottom: 1px #9B9B9B solid;
     color: #fff;
@@ -631,7 +631,7 @@
 .fc .fc-event-container .fc-event-title { display: none; }
 
 /* line 1660, ../sass/user.scss */
-#main-calendar, .fc.calendar { background: #D8D8D8;  color: #000; border: 1px #979797 solid; padding: 10px; }
+#main-calendar, .fc.calendar { background: #fff;  color: #000; border: 1px #979797 solid; padding: 10px; }
 /* line 1667, ../sass/user.scss */
 #main-calendar .fc-header .fc-header-title h2, .fc.calendar .fc-header .fc-header-title h2 { font-size: 26px; line-height: 40px; }
 /* line 1676, ../sass/user.scss */
