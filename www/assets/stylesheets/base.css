@@ -183,7 +183,7 @@ body#app #footer .nav-toggle-container { display: none !important; }
 /* line 145, ../sass/base.scss */
 #footer #menu-footer-menu li a { padding: 0 5px; }
 /* line 150, ../sass/base.scss */
-#footer .brand { background-image: url('[object Object]/assets/dist/images/logo-footer.png?1499188648'); background-repeat: no-repeat; width: 130px; height: 65px; margin: 20px auto 20px; overflow: hidden; text-indent: -9000px; display: block; font: 0/0 a; text-shadow: none; color: transparent; }
+#footer .brand { background-image: url('/assets/dist/images/logo-footer.png?1499188648'); background-repeat: no-repeat; width: 130px; height: 65px; margin: 20px auto 20px; overflow: hidden; text-indent: -9000px; display: block; font: 0/0 a; text-shadow: none; color: transparent; }
 /* line 156, ../sass/base.scss */
 #footer ul.social { float: right; }
 /* line 158, ../sass/base.scss */
