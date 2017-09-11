@@ -60,10 +60,10 @@ small, .small { font-size: 14px; line-height: 20px; }
 .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary.active[disabled], fieldset[disabled] .btn-primary.active { background-color: #a8ebf0; }
 
 /* line 94, ../sass/_bootstrap.scss */
-.btn-blue, .btn-blue:hover, .btn-blue:active, .btn-blue:focus { background-color: #23c1cc; color: #ffffff; }
+.btn-blue, .btn-blue:hover, .btn-blue:active, .btn-blue:focus { background-color: #ff5f92; color: #ffffff; }
 
 /* line 99, ../sass/_bootstrap.scss */
-.btn-purple, .btn-purple:hover, .btn-purple:active, .btn-purple:focus { background-color: #5c2a43; color: #ffffff; }
+.btn-purple, .btn-purple:hover, .btn-purple:active, .btn-purple:focus { background-color: #ff5f92; color: #ffffff; }
 
 /* line 104, ../sass/_bootstrap.scss */
 .btn-purple-2, .btn-purple-2:hover, .btn-purple-2:active, .btn-purple-2:focus { background-color: #5c2a43; color: #ffffff; }
@@ -83,7 +83,7 @@ small, .small { font-size: 14px; line-height: 20px; }
 .badge.badge-pink { background: #ff6494; }
 
 /* line 138, ../sass/_bootstrap.scss */
-.img-thumbnail.img-circle { background: #f2dfc9; border: 1px #f2dfc9 solid; }
+.img-thumbnail.img-circle { background: #ff5f92; border: 1px #ff5f92 solid; }
 
 /* line 143, ../sass/_bootstrap.scss */
 .label-pink { background: #ff6494; }
@@ -209,6 +209,7 @@ body#app #footer .nav-toggle-container { display: none !important; }
 /* line 202, ../sass/base.scss */
 .spacer { height: 15px; }
 
+.nav-pills>li a {color: #fff;}
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
@@ -216,3 +217,4 @@ body#app #footer .nav-toggle-container { display: none !important; }
   background-color: #ff5f92;
   border-radius: 0;
 }
+.nav>li>a:focus, .nav>li>a:hover {color: #ff5f92;}
