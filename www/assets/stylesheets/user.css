@@ -503,7 +503,7 @@
 /* line 1265, ../sass/user.scss */
 #dashboard #conversations #conversation-list .date { color: #fff; font-size: 14px; margin-top: 5px; font-weight: 800; }
 /* line 1271, ../sass/user.scss */
-#dashboard #conversations #conversation-list .excerpt { color: #ac738c; font-size: 14px; line-height: 20px; }
+#dashboard #conversations #conversation-list .excerpt { color: #fff; font-size: 14px; line-height: 20px; }
 /* line 1278, ../sass/user.scss */
 #dashboard #conversations #message-list { border: 1px #9B9B9B solid; background: #ffffff; min-height: 300px; }
 /* line 1283, ../sass/user.scss */
