@@ -131,7 +131,7 @@
 
 /** SIDEBAR **/
 /* line 163, ../sass/user.scss */
-#sidebar .section { padding-top: 0; /*border: 1px #ff5f92 solid;*/ text-align: center; color: #5c2a43; background: #ffffff; }
+#sidebar .section { padding-top: 0; /*border: 1px #ff5f92 solid;*/ text-align: center; color: #4A4A4A; background: #ffffff; }
 /* line 170, ../sass/user.scss */
 #sidebar .section.no-top { border-top: 0; }
 /* line 174, ../sass/user.scss */
@@ -356,11 +356,11 @@
 /* line 803, ../sass/user.scss */
 #dashboard #diary .submit-container, #dashboard #message .submit-container, #dashboard #notes .submit-container, #dashboard #info .submit-container, #dashboard .diary-counselor .submit-container { background: #9B9B9B; border: 1px #9B9B9B solid; border-top: 0; }
 /* line 808, ../sass/user.scss */
-#dashboard #diary .submit-container .cancel, #dashboard #message .submit-container .cancel, #dashboard #notes .submit-container .cancel, #dashboard #info .submit-container .cancel, #dashboard .diary-counselor .submit-container .cancel { background: transparent; color: #a68c99; border-right: 1px #9B9B9B solid; }
+#dashboard #diary .submit-container .cancel, #dashboard #message .submit-container .cancel, #dashboard #notes .submit-container .cancel, #dashboard #info .submit-container .cancel, #dashboard .diary-counselor .submit-container .cancel { background: transparent; color: #F4F4F4; border-right: 1px #9B9B9B solid; }
 /* line 814, ../sass/user.scss */
 #dashboard #diary .submit-container .submit, #dashboard #message .submit-container .submit, #dashboard #notes .submit-container .submit, #dashboard #info .submit-container .submit, #dashboard .diary-counselor .submit-container .submit { background: transparent; color: #ff6494; font-weight: bold; }
 /* line 820, ../sass/user.scss */
-#dashboard #diary .submit-container .save, #dashboard #message .submit-container .save, #dashboard #notes .submit-container .save, #dashboard #info .submit-container .save, #dashboard .diary-counselor .submit-container .save { background: transparent; border-right: 1px #9B9B9B solid; color: #5c2a43; }
+#dashboard #diary .submit-container .save, #dashboard #message .submit-container .save, #dashboard #notes .submit-container .save, #dashboard #info .submit-container .save, #dashboard .diary-counselor .submit-container .save { background: transparent; border-right: 1px #9B9B9B solid; color: #4A4A4A; }
 /* line 828, ../sass/user.scss */
 #dashboard .diary-counselor { margin-bottom: 20px; cursor: pointer; }
 /* line 833, ../sass/user.scss */
@@ -426,7 +426,7 @@
 /* line 1038, ../sass/user.scss */
 #dashboard #messages textarea { color: #5c2a43; padding: 20px; height: 200px; font-size: 16px; line-height: 22px; box-shadow: none !important; }
 /* line 1048, ../sass/user.scss */
-#dashboard #messages .submit-container { background: #fcf2e6; border-top: 1px #9B9B9B solid; padding: 10px; margin: 0 -15px 20px; }
+#dashboard #messages .submit-container { background: #4A4A4A; border-top: 1px #9B9B9B solid; padding: 10px; margin: 0 -15px 20px; }
 /* line 1055, ../sass/user.scss */
 #dashboard #messages .submit-container .btn-primary { border-radius: 0; }
 /* line 1060, ../sass/user.scss */

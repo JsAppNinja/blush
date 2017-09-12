@@ -90,9 +90,9 @@ small, .small { font-size: 14px; line-height: 20px; }
 .label-pink { background: #ff6494; }
 
 /* line 147, ../sass/_bootstrap.scss */
-.modal { color: #ac738c; }
+.modal { color: #4A4A4A; }
 /* line 150, ../sass/_bootstrap.scss */
-.modal .modal-content { background: #fff7ec; border: 3px #f2dfc9 solid; border-radius: 3px; }
+.modal .modal-content { background: #fff; border: 3px #fff solid; border-radius: 0px; }
 /* line 155, ../sass/_bootstrap.scss */
 .modal .modal-content .modal-header { border-bottom: 0; }
 /* line 157, ../sass/_bootstrap.scss */
