@@ -139,7 +139,7 @@
 /* line 178, ../sass/user.scss */
 #sidebar .section.attached-top { margin-top: -20px; padding-top: 30px; }
 /* line 183, ../sass/user.scss */
-#sidebar .section h4 { background-color: #fff6eb; padding: 10px 0; border-top: 1px #9B9B9B solid; border-bottom: 1px #9B9B9B solid; margin: 5px 0; }
+#sidebar .section h4 { background-color: #9B9B9B; padding: 10px 0; border-top: 1px #9B9B9B solid; border-bottom: 1px #9B9B9B solid; margin: 5px 0; color: #fff;}
 /* line 190, ../sass/user.scss */
 #sidebar .section h4.top { margin-top: 0; border-top: 0; }
 /* line 195, ../sass/user.scss */
