@@ -135,11 +135,11 @@ body#admin #page .body #notification .mce-tinymce { margin-bottom: 20px; }
 /* line 90, ../sass/admin.scss */
 body#admin #page .body small { font-size: 12px; line-height: 16px; }
 /* line 97, ../sass/admin.scss */
-body#admin #sidebar { min-height: 500px; background: #491f35; border: 3px #401b2d solid; margin-top: -4px; }
+body#admin #sidebar { min-height: 500px; background: #000; /*border: 3px #000 solid;*/ margin-top: -4px; }
 /* line 103, ../sass/admin.scss */
 body#admin #sidebar li { text-transform: uppercase; }
 /* line 107, ../sass/admin.scss */
-body#admin #sidebar li.active a, body#admin #sidebar li.active a:active, body#admin #sidebar li.active a:visited, body#admin #sidebar li.active a:hover, body#admin #sidebar li:hover a, body#admin #sidebar li:hover a:active, body#admin #sidebar li:hover a:visited, body#admin #sidebar li:hover a:hover, body#admin #sidebar li:active a, body#admin #sidebar li:active a:active, body#admin #sidebar li:active a:visited, body#admin #sidebar li:active a:hover, body#admin #sidebar li:focus a, body#admin #sidebar li:focus a:active, body#admin #sidebar li:focus a:visited, body#admin #sidebar li:focus a:hover { background: #401b2d; color: #905a72; font-weight: bold; }
+body#admin #sidebar li.active a, body#admin #sidebar li.active a:active, body#admin #sidebar li.active a:visited, body#admin #sidebar li.active a:hover, body#admin #sidebar li:hover a, body#admin #sidebar li:hover a:active, body#admin #sidebar li:hover a:visited, body#admin #sidebar li:hover a:hover, body#admin #sidebar li:active a, body#admin #sidebar li:active a:active, body#admin #sidebar li:active a:visited, body#admin #sidebar li:active a:hover, body#admin #sidebar li:focus a, body#admin #sidebar li:focus a:active, body#admin #sidebar li:focus a:visited, body#admin #sidebar li:focus a:hover { background: #4A4A4A; color: #fff; font-weight: bold; }
 /* line 114, ../sass/admin.scss */
 body#admin #sidebar li a { line-height: 36px; padding: 10px 20px; color: #ffffff; border-radius: 0; }
 /* line 120, ../sass/admin.scss */
@@ -147,13 +147,13 @@ body#admin #sidebar li a:hover, body#admin #sidebar li a:focus, body#admin #side
 /* line 130, ../sass/admin.scss */
 body#admin .stat h4 { background: #491f35; border: 3px #401b2d solid; color: #905a72; text-align: center; line-height: 36px; margin-bottom: 5px; margin-top: -4px; text-transform: none; }
 /* line 141, ../sass/admin.scss */
-body#admin .stat .count { background: #491f35; border: 3px #401b2d solid; font-size: 50px; line-height: 90px; text-align: center; font-weight: 500; margin-bottom: 30px; }
+body#admin .stat .count { background: #4A4A4A; border: 3px #4A4A4A solid; font-size: 50px; line-height: 90px; text-align: center; font-weight: 500; margin-bottom: 30px; color: #ff5f92; }
 /* line 153, ../sass/admin.scss */
 body#admin .stats li { padding: 10px 0; font-size: 18px; line-height: 28px; }
 /* line 158, ../sass/admin.scss */
 body#admin .stats li strong { display: block; float: right; width: 85px; text-align: right; }
 /* line 167, ../sass/admin.scss */
-body#admin .btn, body#admin .btn:visited { border-radius: 0; background: #c2b4bb; color: #744057; border: 1px #744057 solid; font-weight: bold; }
+body#admin .btn, body#admin .btn:visited { border-radius: 0; background: #C3C3C3; color: #4A4A4A; border: 1px #4A4A4A solid; font-weight: bold; }
 /* line 174, ../sass/admin.scss */
 body#admin .btn.cancel, body#admin .btn:visited.cancel { margin-right: 20px; }
 /* line 180, ../sass/admin.scss */
@@ -207,8 +207,8 @@ body#admin .alert.alert-warning { background: #834864; color: #fce7e4; border-co
 /* line 308, ../sass/admin.scss */
 body#admin .panel { border: 0; background: none; }
 /* line 312, ../sass/admin.scss */
-body#admin .panel .panel-heading { background: #491f35; border: 3px #401b2d solid; color: #905a72; margin-bottom: 3px; }
+body#admin .panel .panel-heading { background: #000; border: 3px #000 solid; color: #fff; margin-bottom: 3px; }
 /* line 319, ../sass/admin.scss */
-body#admin .panel .panel-body { background: #401b2d; border: 3px #401b2d solid; color: #ffffff; }
+body#admin .panel .panel-body { background: #000; border: 3px #000 solid; color: #ffffff; }
 /* line 324, ../sass/admin.scss */
 body#admin .panel .panel-body label { font-weight: normal; }

@@ -1,13 +1,13 @@
 /* line 4, ../sass/_form.scss */
 .std-form .form-control { font-weight: 300; font-size: 18px; height: 38px; color: #000; border: 1px #F4F4F4 solid; }
 /* line 22, ../sass/_mixins.scss */
-.std-form .form-control::-webkit-input-placeholder { color: #5c2a43; }
+.std-form .form-control::-webkit-input-placeholder { color: #4A4A4A; }
 /* line 26, ../sass/_mixins.scss */
-.std-form .form-control:-moz-placeholder { /* Firefox 18- */ color: #5c2a43; }
+.std-form .form-control:-moz-placeholder { /* Firefox 18- */ color: #4A4A4A; }
 /* line 30, ../sass/_mixins.scss */
-.std-form .form-control::-moz-placeholder { /* Firefox 19+ */ color: #5c2a43; }
+.std-form .form-control::-moz-placeholder { /* Firefox 19+ */ color: #4A4A4A; }
 /* line 34, ../sass/_mixins.scss */
-.std-form .form-control:-ms-input-placeholder { color: #5c2a43; }
+.std-form .form-control:-ms-input-placeholder { color: #4A4A4A; }
 /* line 13, ../sass/_form.scss */
 .std-form .form-control.error { border: 1px solid #B94A48; }
 /* line 17, ../sass/_form.scss */
@@ -424,7 +424,7 @@
 /* line 1032, ../sass/user.scss */
 #dashboard #messages .btn i, #dashboard #messages .btn .caret { border-top-color: #ffffff; border-bottom-color: #ffffff; }
 /* line 1038, ../sass/user.scss */
-#dashboard #messages textarea { color: #5c2a43; padding: 20px; height: 200px; font-size: 16px; line-height: 22px; box-shadow: none !important; }
+#dashboard #messages textarea { color: #4A4A4A; padding: 20px; height: 200px; font-size: 16px; line-height: 22px; box-shadow: none !important; }
 /* line 1048, ../sass/user.scss */
 #dashboard #messages .submit-container { background: #4A4A4A; border-top: 1px #9B9B9B solid; padding: 10px; margin: 0 -15px 20px; }
 /* line 1055, ../sass/user.scss */
