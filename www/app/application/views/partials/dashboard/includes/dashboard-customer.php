@@ -82,7 +82,7 @@
             </div>
 
             <div class="brown-arrow">
-                <button class="btn btn-primary btn-lg" id="btn-add-credits">Add Credits</button>
+                <button class="btn btn-primary btn-lg customer" id="btn-add-credits">Add Credits</button>
             </div>
 
             <div class="top-arrow hidden-xs"></div>

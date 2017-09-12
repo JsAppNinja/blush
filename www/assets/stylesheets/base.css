@@ -44,6 +44,7 @@ small, .small { font-size: 14px; line-height: 20px; }
 
 /* line 63, ../sass/_bootstrap.scss */
 .btn-lg { font-size: 20px; padding: 10px 22px; }
+.btn-lg.customer { font-size: 20px; padding: 12px 57px; }
 
 /* line 68, ../sass/_bootstrap.scss */
 .btn-yellow, .btn-yellow:hover, .btn-yellow:active, .btn-yellow:focus { background-color: #f5c78e; color: #ffffff; }
