@@ -103,9 +103,9 @@
 .dataTables_wrapper .dataTables_paginate a { display: inline-block; padding: 10px; }
 
 /* line 7, ../sass/admin.scss */
-body#admin { color: #ffffff; }
+body#admin { color: #4A4A4A; }
 /* line 10, ../sass/admin.scss */
-body#admin #header { background: #401b2d; border-bottom: 1px #744057 solid; padding: 10px 0; color: #ffffff; }
+body#admin #header { background: #fff; border-bottom: 1px #fff solid; padding: 10px 0; color: #4A4A4A; }
 /* line 16, ../sass/admin.scss */
 body#admin #header .brand { background-image: url('[object Object]/assets/dist/images/logo-footer.png?1499188648'); background-repeat: no-repeat; width: 130px; height: 65px; overflow: hidden; text-indent: -9000px; display: block; font: 0/0 a; text-shadow: none; color: transparent; margin-top: 0; }
 /* line 23, ../sass/admin.scss */
