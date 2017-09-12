@@ -105,7 +105,7 @@
 /* line 7, ../sass/admin.scss */
 body#admin { color: #4A4A4A; }
 /* line 10, ../sass/admin.scss */
-body#admin #header { background: #ff5f92; border-bottom: 1px #fff solid; padding: 10px 0; color: #4A4A4A; }
+body#admin #header { background: #4A4A4A; border-bottom: 1px #fff solid; padding: 10px 0; color: #fff; }
 /* line 16, ../sass/admin.scss */
 body#admin #header .brand { background-image: url('[object Object]/assets/dist/images/logo-footer.png?1499188648'); background-repeat: no-repeat; width: 130px; height: 65px; overflow: hidden; text-indent: -9000px; display: block; font: 0/0 a; text-shadow: none; color: transparent; margin-top: 0; }
 /* line 23, ../sass/admin.scss */
@@ -145,7 +145,7 @@ body#admin #sidebar li a { line-height: 36px; padding: 10px 20px; color: #ffffff
 /* line 120, ../sass/admin.scss */
 body#admin #sidebar li a:hover, body#admin #sidebar li a:focus, body#admin #sidebar li a:active { background: #401b2d; color: #905a72; font-weight: bold; }
 /* line 130, ../sass/admin.scss */
-body#admin .stat h4 { background: #491f35; border: 3px #401b2d solid; color: #905a72; text-align: center; line-height: 36px; margin-bottom: 5px; margin-top: -4px; text-transform: none; }
+body#admin .stat h4 { background: #000; border: 3px #000 solid; color: #fff; text-align: center; line-height: 36px; margin-bottom: 5px; margin-top: -4px; text-transform: none; }
 /* line 141, ../sass/admin.scss */
 body#admin .stat .count { background: #4A4A4A; border: 3px #4A4A4A solid; font-size: 50px; line-height: 90px; text-align: center; font-weight: 500; margin-bottom: 30px; color: #ff5f92; }
 /* line 153, ../sass/admin.scss */
