@@ -178,11 +178,11 @@
 #sidebar .white-arrow { background-image: url('/assets/dist/images/sidebar-bottom-white.png'); background-repeat: no-repeat; width: 240px; height: 90px; display: none !important; }
 /*#sidebar .white-arrow { background-image: url('/assets/dist/images/sidebar-bottom-white.png'); background-repeat: no-repeat; width: 240px; height: 90px; }*/
 /* line 276, ../sass/user.scss */
-#sidebar .brown-arrow { background-image: url('/assets/dist/images/sidebar-bottom-brown.png'); background-repeat: no-repeat; width: 240px; height: 91px; text-align: center; }
+#sidebar .brown-arrow { /*background-image: url('/assets/dist/images/sidebar-bottom-brown.png'); */background-repeat: no-repeat; width: 240px; height: 91px; text-align: center; }
 /* line 280, ../sass/user.scss */
 #sidebar .brown-arrow .btn-primary { font-weight: bold; margin: 0 auto; border-radius: 0px 0px 4px 4px; }
 /* line 287, ../sass/user.scss */
-#sidebar .top-arrow { background-image: url('/assets/dist/images/sidebar-top-white.png'); background-repeat: no-repeat; width: 240px; height: 41px; text-align: center; }
+#sidebar .top-arrow { /*background-image: url('/assets/dist/images/sidebar-top-white.png');*/ background-repeat: no-repeat; width: 240px; height: 41px; text-align: center; }
 
 /* line 294, ../sass/user.scss */
 .submit-container .alert { margin-bottom: 0; }
