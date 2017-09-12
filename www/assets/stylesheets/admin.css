@@ -105,7 +105,7 @@
 /* line 7, ../sass/admin.scss */
 body#admin { color: #4A4A4A; }
 /* line 10, ../sass/admin.scss */
-body#admin #header { background: #fff; border-bottom: 1px #fff solid; padding: 10px 0; color: #4A4A4A; }
+body#admin #header { background: #ff5f92; border-bottom: 1px #fff solid; padding: 10px 0; color: #4A4A4A; }
 /* line 16, ../sass/admin.scss */
 body#admin #header .brand { background-image: url('[object Object]/assets/dist/images/logo-footer.png?1499188648'); background-repeat: no-repeat; width: 130px; height: 65px; overflow: hidden; text-indent: -9000px; display: block; font: 0/0 a; text-shadow: none; color: transparent; margin-top: 0; }
 /* line 23, ../sass/admin.scss */
@@ -123,7 +123,7 @@ body#admin #page .page-title { padding: 20px 0; border-bottom: 1px #401b2d solid
 /* line 58, ../sass/admin.scss */
 body#admin #page .page-title h1 { font-style: normal; margin: 0; text-transform: uppercase; }
 /* line 65, ../sass/admin.scss */
-body#admin #page .body { min-height: 300px; border-top: 3px #491f35 solid; color: #ffffff; }
+body#admin #page .body { min-height: 300px; border-top: 3px #491f35 solid; color: #4A4A4A; }
 /* line 71, ../sass/admin.scss */
 body#admin #page .body table.notifications th.name { width: 25%; }
 /* line 75, ../sass/admin.scss */
