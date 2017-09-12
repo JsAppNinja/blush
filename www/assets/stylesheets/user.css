@@ -590,9 +590,9 @@
 /* line 1521, ../sass/user.scss */
 .modal .add-credits .input-group .input-group-addon i { font-size: 16px; padding: 0; color: #ac738c; }
 /* line 1526, ../sass/user.scss */
-.modal .add-credits .input-group .input-group-addon i:before { font-size: 16px; color: #ac738c; line-height: 10px; position: relative; top: -3px; left: 2px; }
+.modal .add-credits .input-group .input-group-addon i:before { font-size: 16px; color: #4A4A4A; line-height: 10px; position: relative; top: -3px; left: 2px; }
 /* line 1537, ../sass/user.scss */
-.modal .add-credits .input-group .form-control { font-size: 20px; box-shadow: none; background: #efe0d0; color: #ac738c; border: 1px #efe0d0 solid; text-align: center; }
+.modal .add-credits .input-group .form-control { font-size: 20px; box-shadow: none; background: #4A4A4A; color: #fff; border: 1px #4A4A4A solid; text-align: center; }
 /* line 1547, ../sass/user.scss */
 .modal .add-credits .modal-footer { padding-top: 0; padding-bottom: 10px; text-align: center; margin-top: 0; }
 /* line 1553, ../sass/user.scss */

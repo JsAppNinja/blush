@@ -100,7 +100,7 @@ small, .small { font-size: 14px; line-height: 20px; }
 /* line 160, ../sass/_bootstrap.scss */
 .modal .modal-content .modal-header h4 { color: #5c2a43; }
 /* line 165, ../sass/_bootstrap.scss */
-.modal .modal-content .modal-footer { background: #faf0e4; position: relative; min-height: 35px; }
+.modal .modal-content .modal-footer { background: #fff; position: relative; min-height: 35px; }
 /* line 171, ../sass/_bootstrap.scss */
 .modal .modal-content .gform_footer { display: none; }
 
