@@ -10,13 +10,12 @@
                         <span class="month"><%= event.month %></span>
                         <span class="day"><%= event . day %></span>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-11 col-md-10 col-sm-10">
                         <div class="text">
                             <h4><%= event . title %></h4>
                             <h5>One Time Event</h5>
                         </div>
                     </div>
-              
                 </div>
             </div>
             <div class="title">
