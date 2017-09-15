@@ -15,13 +15,13 @@
     <!-- 3. Place event data -->
     <span class="addtocalendar atc-base">
         <var class="atc_event">
-            <var class="atc_date_start">2017-05-04 12:00:00</var>
-            <var class="atc_date_end">2017-05-04 18:00:00</var>
-            <var class="atc_timezone">Europe/London</var>
-            <var class="atc_title">Star Wars Day Party</var>
-            <var class="atc_description">May the force be with you</var>
-            <var class="atc_location">Tatooine</var>
-            <var class="atc_organizer">Luke Skywalker</var>
+            <var class="atc_date_start"><%= event.date %> <% event.start_time %></var>
+            <var class="atc_date_end"><%= event.date %> <% event.end_time %></var>
+            <var class="atc_timezone"><%= app.user.timezone %></var>
+            <var class="atc_title"><% event.title %></var>
+            <var class="atc_description"><% event.text %></var>
+            <var class="atc_location">Video Session</var>
+            <var class="atc_organizer"><% app.user.counselor %></var>
             <var class="atc_organizer_email">luke@starwars.com</var>
         </var>
     </span>
