@@ -27,8 +27,8 @@
                     </div>
                     <div class="col-lg-11 col-md-10 col-sm-10">
                         <div class="text pull-left">Event Details</div>
-                        <%= app.user.timezone %>
-                        <div title="Add to Calendar" class="addeventatc" data-direct="google">
+<!--                         <%= app.user.timezone %>
+ -->                        <div title="Add to Calendar" class="addeventatc" data-direct="google">
                             Add to Calendar
                             <span class="start">09/29/2017 09:00 AM</span>
                             <span class="end">09/29/2017 11:00 AM</span>
