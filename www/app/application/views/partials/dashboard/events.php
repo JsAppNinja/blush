@@ -38,7 +38,7 @@
                             </script>
 
                             <!-- 3. Place event data -->
-                            <span class="addtocalendar atc-style-blue">
+                            <span class="addtocalendar atc-base">
                                 <var class="atc_event">
                                     <var class="atc_date_start">2017-05-04 12:00:00</var>
                                     <var class="atc_date_end">2017-05-04 18:00:00</var>
