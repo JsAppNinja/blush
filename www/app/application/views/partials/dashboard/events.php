@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-lg-11 col-md-10 col-sm-10">
                         <div class="text pull-left">Event Details</div>
-                        <%= app.user %>
+                        <%= app.user.firstname %>
                         <div title="Add to Calendar" class="addeventatc">
                             Add to Calendar
                             <span class="start">09/29/2017 08:00 AM</span>
