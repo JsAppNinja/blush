@@ -58,8 +58,8 @@
     <!-- 3. Place event data -->
     <span class="addtocalendar atc-base">
         <var class="atc_event">
-            <var class="atc_date_start"><%= event.day %> <%= event.start_time %></var>
-            <var class="atc_date_end"><%= event.day %> <%= event.end_time %></var>
+            <var class="atc_date_start"><%= event.date %> <%= event.start_time %></var>
+            <var class="atc_date_end"><%= event.date %> <%= event.end_time %></var>
             <var class="atc_timezone"><%= app.user.timezone %></var>
             <var class="atc_title"><%= event.title %></var>
             <var class="atc_description"><%= event.text %></var>
