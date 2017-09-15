@@ -27,7 +27,6 @@
                     </div>
                     <div class="col-lg-11 col-md-10 col-sm-10">
                         <div class="text pull-left">Event Details</div>
-                        <div class="pull-left">
                             <div title="Add to Calendar" class="addeventatc" data-direct="google">
                                 Add to Calendar
                                 <span class="start"><%= event.date %> <%= event.start_time %></span>
@@ -39,7 +38,6 @@
                                 <span class="date_format">MM/DD/YYYY</span>
                                 <span class="client">axHkeGoayzZGWlMVvmiE28885</span>
                             </div>
-                        </div>
                         <button class="cancel btn btn-sm pull-right btn-danger" data-uuid="<%=event.uuid%>" data-loading-text="Cancelling Event...">
                             <i class="fa fa-remove"></i> Cancel Event
                         </button>
