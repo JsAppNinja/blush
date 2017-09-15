@@ -4,24 +4,7 @@
     <title><?=$this->config->item('site_title') . " - " . $page_title?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/images/favicon.png">
-     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async ></script>
-    <!-- AddEvent Settings -->
-    <script type="text/javascript">
-    window.addeventasync = function(){
-        addeventatc.settings({
-            license    : "axHkeGoayzZGWlMVvmiE28885",
-            mouse      : false,
-            css        : true,
-            outlook    : {show:true, text:"Outlook"},
-            google     : {show:true, text:"Google <em>(online)</em>"},
-            yahoo      : {show:true, text:"Yahoo <em>(online)</em>"},
-            outlookcom : {show:true, text:"Outlook.com <em>(online)</em>"},
-            appleical  : {show:true, text:"Apple Calendar"},
-            facebook   : {show:true, text:"Facebook Event"},
-            dropdown   : {order:"outlook,google,appleical"}
-        });
-    };
-    </script>
+
     <script type="text/javascript">
         var SITE_URL = '<?= site_detect_url() ?>';
     </script>
@@ -30,7 +13,6 @@
     } else {
         include(APPPATH . 'views/includes/prod/assets-header.html');
     } ?>
-
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -48,7 +30,24 @@
         ga('send', 'pageview');
 
     </script>
-    
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+    <!-- AddEvent Settings -->
+    <script type="text/javascript">
+    window.addeventasync = function(){
+        addeventatc.settings({
+            license    : "axHkeGoayzZGWlMVvmiE28885",
+            mouse      : false,
+            css        : true,
+            // outlook    : {show:true, text:"Outlook"},
+            // google     : {show:true, text:"Google <em>(online)</em>"},
+            // yahoo      : {show:true, text:"Yahoo <em>(online)</em>"},
+            // outlookcom : {show:true, text:"Outlook.com <em>(online)</em>"},
+            // appleical  : {show:true, text:"Apple Calendar"},
+            // facebook   : {show:true, text:"Facebook Event"},
+            // dropdown   : {order:"outlook,google,appleical"}
+        });
+    };
+    </script>
 
     <!-- Facebook Conversion Code for Members -->
     <script>(function() {
@@ -64,7 +63,6 @@
         })();
         window._fbq = window._fbq || [];
     </script>
-
 </head>
 <body id="app">
 
