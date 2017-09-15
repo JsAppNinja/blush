@@ -32,7 +32,7 @@
     </script>
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
     <!-- AddEvent Settings -->
-    <script type="text/javascript">
+   <!--  <script type="text/javascript">
     window.addeventasync = function(){
         addeventatc.settings({
             license    : "axHkeGoayzZGWlMVvmiE28885",
@@ -47,7 +47,7 @@
             dropdown   : {order:"outlook,google,appleical"}
         });
     };
-    </script>
+    </script> -->
 
     <!-- Facebook Conversion Code for Members -->
     <script>(function() {
