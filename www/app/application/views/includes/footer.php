@@ -22,5 +22,23 @@
 <script src="/app/partials/all" type="text/javascript"></script>
 <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
 <script type="text/javascript">Stripe.setPublishableKey('<?=$this->config->item('stripe_public_key')?>');</script>
+<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+    <!-- AddEvent Settings -->
+    <script type="text/javascript">
+    window.addeventasync = function(){
+        addeventatc.settings({
+            license    : "axHkeGoayzZGWlMVvmiE28885",
+            mouse      : false,
+            css        : true,
+            outlook    : {show:true, text:"Outlook"},
+            google     : {show:true, text:"Google <em>(online)</em>"},
+            yahoo      : {show:true, text:"Yahoo <em>(online)</em>"},
+            outlookcom : {show:true, text:"Outlook.com <em>(online)</em>"},
+            appleical  : {show:true, text:"Apple Calendar"},
+            facebook   : {show:true, text:"Facebook Event"},
+            dropdown   : {order:"outlook,google,appleical"}
+        });
+    };
+    </script>
 </body>
 </html>
