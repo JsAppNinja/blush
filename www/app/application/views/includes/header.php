@@ -30,6 +30,22 @@
         ga('send', 'pageview');
 
     </script>
+    
+
+    <!-- Facebook Conversion Code for Members -->
+    <script>(function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+    </script>
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async ></script>
     <!-- AddEvent Settings -->
     <script type="text/javascript">
@@ -47,21 +63,6 @@
             dropdown   : {order:"outlook,google,appleical"}
         });
     };
-    </script>
-
-    <!-- Facebook Conversion Code for Members -->
-    <script>(function() {
-            var _fbq = window._fbq || (window._fbq = []);
-            if (!_fbq.loaded) {
-                var fbds = document.createElement('script');
-                fbds.async = true;
-                fbds.src = '//connect.facebook.net/en_US/fbds.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(fbds, s);
-                _fbq.loaded = true;
-            }
-        })();
-        window._fbq = window._fbq || [];
     </script>
 </head>
 <body id="app">
