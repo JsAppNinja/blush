@@ -30,7 +30,7 @@
         ga('send', 'pageview');
 
     </script>
-    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async ></script>
     <!-- AddEvent Settings -->
     <script type="text/javascript">
     window.addeventasync = function(){
