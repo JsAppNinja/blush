@@ -2,6 +2,29 @@
 <div class="col-lg-12">
 <% if (_ . size(objects) > 0) { %>
     <h3>Upcoming Events</h3>
+    <!-- 2. Include script -->
+    <script type="text/javascript">(function () {
+            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+                var h = d[g]('body')[0];h.appendChild(s); }})();
+    </script>
+
+    <!-- 3. Place event data -->
+    <span class="addtocalendar atc-base pull-right">
+        <var class="atc_event">
+            <var class="atc_date_start">2017-05-04 12:00:00</var>
+            <var class="atc_date_end">2017-05-04 18:00:00</var>
+            <var class="atc_timezone">Europe/London</var>
+            <var class="atc_title">Star Wars Day Party</var>
+            <var class="atc_description">May the force be with you</var>
+            <var class="atc_location">Tatooine</var>
+            <var class="atc_organizer">Luke Skywalker</var>
+            <var class="atc_organizer_email">luke@starwars.com</var>
+        </var>
+    </span>
     <% _ . each(objects, function (event, index, list) { %>
         <div class="event">
             <div class="date-title">
