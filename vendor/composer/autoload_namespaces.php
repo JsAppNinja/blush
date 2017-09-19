@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Mailgun\\Tests' => array($vendorDir . '/mailgun/mailgun-php/tests'),
     'Mailgun' => array($vendorDir . '/mailgun/mailgun-php/src'),
     'JohnStevenson\\JsonWorks' => array($vendorDir . '/aoberoi/json-works/src'),
     'Guzzle\\Tests' => array($vendorDir . '/guzzle/guzzle/tests'),

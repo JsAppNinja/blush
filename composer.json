@@ -1,9 +1,12 @@
 {
     "require": {
-        "mailgun/mailgun-php": "~1.7.2",
+        "mailgun/mailgun-php": "^2.3",
         "opentok/opentok": "2.2.x",
         "stripe/stripe-php": "2.*",
         "robmorgan/phinx": "0.4.*",
-        "plivo/plivo-php": "^1.1"
+        "plivo/plivo-php": "^1.1",
+        "php-http/curl-client": "^1.7",
+        "guzzlehttp/psr7": "^1.4",
+        "php-http/message": "^1.6"
     }
 }
