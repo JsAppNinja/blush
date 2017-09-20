@@ -31,7 +31,7 @@ var defaults = {
 	weekNumberTitle: 'W',
 	
 	// editing
-	editable: true,
+	// editable: true,
 	//disableDragging: false,
 	//disableResizing: false,
 	
@@ -84,7 +84,7 @@ var defaults = {
 	},
 	
 	//selectable: false,
-	unselectAuto: true,
+	unselectAuto: false,
 	
 	dropAccept: '*',
 	
