@@ -25,13 +25,13 @@ var defaults = {
 		center: '',
 		right: 'today prev,next'
 	},
-	weekends: false,
+	weekends: true,
 	weekNumbers: false,
 	weekNumberCalculation: 'iso',
 	weekNumberTitle: 'W',
 	
 	// editing
-	//editable: false,
+	editable: true,
 	//disableDragging: false,
 	//disableResizing: false,
 	
