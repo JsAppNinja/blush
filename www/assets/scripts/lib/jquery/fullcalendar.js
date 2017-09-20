@@ -25,7 +25,7 @@ var defaults = {
 		center: '',
 		right: 'today prev,next'
 	},
-	weekends: true,
+	weekends: false,
 	weekNumbers: false,
 	weekNumberCalculation: 'iso',
 	weekNumberTitle: 'W',
