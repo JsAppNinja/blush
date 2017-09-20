@@ -6,6 +6,7 @@ app.CalendarView = app.BaseView.extend({
     event_template: '<div data-uuid="<%=uuid%>" class="event">' +
                         '<div class="title"><%=event.keys() %></div>' +
                     '</div>',
+                    console.log(Object.keys(event));
 
     events: {
         'click .diary': 'open_diary'
