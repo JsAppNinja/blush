@@ -3,8 +3,8 @@ app.CalendarView = app.BaseView.extend({
 
     template_name: 'dashboard/calendar',
 
-    event_template: '<div data-uuid="<%=uuid%>" class="event foo">' +
-                        '<div class="title"><%=title%></div>' +
+    event_template: '<div data-uuid="<%=uuid%>" class="event">' +
+                        '<a href="http://google.com" class="title"><%=title%></a>' +
                     '</div>',
 
     events: {
