@@ -4,13 +4,7 @@ app.CalendarView = app.BaseView.extend({
     template_name: 'dashboard/calendar',
 
     event_template: '<div data-uuid="<%=uuid%>" class="event">' +
-                        '<div class="title"><%=title%></div>' +
-                        '<ul>' +
-                            '<li><%=event[0]%>' +
-                            '<li><%=event[1]%>' +
-                            '<li><%=event[2]%>' +
-                            '<li><%=event[3]%>' +
-                        '</ul>' +
+                        '<a href="http://addtocalendar.com/atc/google?utz=-300&uln=en-US&vjs=1.5&e[0][date_start]=<%= start_time %>&e[0][date_end]=2017-09-25%2017%3A00%3A00&e[0][timezone]=<%=app.user.timezone%>&e[0][title]=Video%20Session%20with%20Kali&e[0][description]=Video%20Session%20with%20Kali&e[0][location]=Video%20Session&e[0][organizer]=Kali%20Rogers&e[0][organizer_email]=" class="title"><%=title%></a>' +
                     '</div>',
 
     events: {
