@@ -4,8 +4,8 @@ app.CalendarView = app.BaseView.extend({
     template_name: 'dashboard/calendar',
 
     event_template: '<div data-uuid="<%=uuid%>" class="event">' +
-                        '<div class="title"><%=event%></div>' +
-                    '</div>',
+                        '<div class="title"><%=title%></div>' +
+                    '</div>', 
 
     events: {
         'click .diary': 'open_diary'
