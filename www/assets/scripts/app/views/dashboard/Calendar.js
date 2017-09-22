@@ -5,6 +5,7 @@ app.CalendarView = app.BaseView.extend({
 
     event_template: '<div data-uuid="<%=uuid%>" class="event">' +
                         '<div class="title"><%=title%></div>' +
+                        '<div class="title"><%=pretty_end_time%></div>' +
                     '</div>', 
 
     events: {
