@@ -12,8 +12,8 @@ app.CalendarView = app.BaseView.extend({
                             '<var class="atc_date_start"><%= event.date %> <%= event.start_time %></var>' +
                             '<var class="atc_date_end"><%= event.date %> <%= event.end_time %></var>' +
                             '<var class="atc_timezone"><%= app.user.timezone %></var>' +
-                            '<var class="atc_title">Video Session with <%= app.user.counselor.firstname %></var>' +
-                            '<var class="atc_description">Video Session with <%= app.user.counselor.firstname %></var>' +
+                            '<var class="atc_title">Video Session with <%= app.user.firstname %></var>' +
+                            '<var class="atc_description">Video Session with <%= title %></var>' +
                             '<var class="atc_location">Video Session</var>' +
                             '<var class="atc_organizer"><%= app.user.counselor.firstname %> <%= app.user.counselor.lastname %></var>' +
                             '<var class="atc_organizer_email"><%= app.user.counselor.email %></var>' +
