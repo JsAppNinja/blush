@@ -45,8 +45,8 @@
   user_hash: "<?php
        echo hash_hmac(
          'sha256',
-         'kali@joinblush.com',
-         '3qenI3IiDbaxJr5mvLLJA72uASR83w9kTpuhOD4N'
+         '$user->email',
+         $this->config->item('intercom_key')
        );
      ?>" // HMAC using SHA-256
 };
