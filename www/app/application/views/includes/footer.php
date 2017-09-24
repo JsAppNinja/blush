@@ -40,7 +40,7 @@
   user_hash: "<?php
        echo hash_hmac(
          'sha256',
-         $customer->email,
+         '$customer->email',
          '3qenI3IiDbaxJr5mvLLJA72uASR83w9kTpuhOD4N'
        );
      ?>" // HMAC using SHA-256
