@@ -36,7 +36,7 @@
 <script>
  window.intercomSettings = {
   app_id: "w7qc2x21",
-  // email: "<?php echo $user->email ?>", // Email address
+  email: "<?php echo $user->email ?>", // Email address
   // user_hash: "<?php
   //     echo hash_hmac(
   //       'sha256',
