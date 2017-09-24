@@ -33,7 +33,7 @@
 <script>
   window.intercomSettings = {
     app_id: "w7qc2x21",
-    name: app.user.firstname app.user.lastname , // Full name
+    name: app.user.firstname + app.user.lastname , // Full name
     email: app.user.email, // Email address
     // created_at: <%= current_user.created_at.to_i %> // Signup date as a Unix timestamp
   };
