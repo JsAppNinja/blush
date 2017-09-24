@@ -40,7 +40,7 @@
       "OpenSSL::HMAC.hexdigest(" +
        " 'sha256', " +
        " '3qenI3IiDbaxJr5mvLLJA72uASR83w9kTpuhOD4N', " +
-        current_user.email +
+        app.user.email +
       ")" +
     "%>",
   };
