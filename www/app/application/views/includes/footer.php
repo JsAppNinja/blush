@@ -30,13 +30,8 @@
                                 s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
                                 var h = d[g]('body')[0];h.appendChild(s); }})();
                     </script>
-<script src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/hmac-sha256.js"></script>
-<script src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/components/enc-base64-min.js"></script>
-<script>
-  var hash = CryptoJS.HmacSHA256(app.user.email, "3qenI3IiDbaxJr5mvLLJA72uASR83w9kTpuhOD4N");
-  var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
-  document.write(hashInBase64);
-</script>
+<?php $s = hash_hmac('sha256', $user->email, '3qenI3IiDbaxJr5mvLLJA72uASR83w9kTpuhOD4N', true);
+echo base64_encode($s); ?>
 <script>
   window.intercomSettings = {
     app_id: "w7qc2x21",
