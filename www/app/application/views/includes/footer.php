@@ -35,8 +35,6 @@
 <script>
     var email = app.user.email;
     console.log(email);
-    <?=$user->email?>
-    $user->email
 </script>
 <script>
  var email = app.user.email;
