@@ -37,9 +37,11 @@
     console.log(email);
 </script>
 <script>
+ var email = app.user.email;
+ 
  window.intercomSettings = {
   app_id: "w7qc2x21",
-  email: "kali@joinblush.com", // Email address
+  email: `${email}`, // Email address
   user_hash: "<?php
        echo hash_hmac(
          'sha256',
