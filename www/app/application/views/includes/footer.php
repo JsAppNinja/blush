@@ -46,7 +46,7 @@
        echo hash_hmac(
          'sha256',
          '$user->email',
-         echo $this->config->item('intercom_key')
+         $this->config->item('intercom_key')
        );
      ?>" // HMAC using SHA-256
 };
