@@ -55,6 +55,9 @@ $config['plivo_auth_id'] = 'MANZZJOWM5NGEWNDDMMG';
 $config['plivo_auth_token'] = 'MmIyYWNhZDBlMThmNWUzM2M2NjY4MDEzY2M4YWUw';
 $config['plivo_number'] = '16622606907';
 
+$config['intercom_key'] = '3qenI3IiDbaxJr5mvLLJA72uASR83w9kTpuhOD4N';
+$config['intercom_email'] = $user->email;
+
 if (IS_TEST) {
 
     $config['stripe_public_key'] = 'pk_test_1RDlFmSQG3Mvf3q8GgfmvCiL';
