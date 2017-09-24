@@ -36,12 +36,13 @@
     var email = app.user.email;
     console.log(email);
 </script>
+<?php echo $customer->email; ?>
 <script>
  var email = app.user.email;
  
  window.intercomSettings = {
   app_id: "w7qc2x21",
-  email: '<?=$user->email;?>', // Email address
+  email: '<?=$customer->email;?>', // Email address
   user_hash: "<?php
        echo hash_hmac(
          'sha256',
