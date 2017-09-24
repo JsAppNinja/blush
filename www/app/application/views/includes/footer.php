@@ -41,7 +41,7 @@
  
  window.intercomSettings = {
   app_id: "w7qc2x21",
-  email: 'app.user.email', // Email address
+  email: '<?=$this->config->item('itermcom_email')?>', // Email address
   user_hash: "<?php
        echo hash_hmac(
          'sha256',
