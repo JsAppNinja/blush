@@ -3,7 +3,7 @@
 
 <div id="footer"></div>
 <script type="text/javascript">
-    app.user = <?= get_user_json('email') ?>;
+    app.user = <?= get_user_json() ?>;
     app.data = <?= get_blush_data() ?>;
     <? if(isset($activeRouter)) { ?>
     app.activeRouter = '<?= $activeRouter ?>';
@@ -36,7 +36,7 @@
 <script>
  window.intercomSettings = {
   app_id: "w7qc2x21",
-  email: "<?php $customer->email ?>", // Email address
+  email: "kali@joinblush.com", // Email address
   user_hash: "<?php
        echo hash_hmac(
          'sha256',
