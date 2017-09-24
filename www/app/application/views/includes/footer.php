@@ -32,8 +32,8 @@
                     </script>
 
 
-<?php echo $customer->email; ?>
-<?php echo $user->email; ?>
+foo
+<?php echo 'foo'; ?>
 <script>
  window.intercomSettings = {
   app_id: "w7qc2x21",
