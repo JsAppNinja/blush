@@ -3,7 +3,7 @@
 
 <div id="footer"></div>
 <script type="text/javascript">
-    app.user = <?= get_user_json() ?>;
+    app.user = <?= get_user_json('email') ?>;
     app.data = <?= get_blush_data() ?>;
     <? if(isset($activeRouter)) { ?>
     app.activeRouter = '<?= $activeRouter ?>';
