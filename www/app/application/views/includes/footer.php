@@ -34,7 +34,7 @@
 
 <?php $email = $user->email; ?>
 <script>
- window.Intercom("boot", {
+ window.Intercom({
   app_id: "w7qc2x21",
   email: "<?php echo $current_user->email ?>", // Email address
   user_hash: "<?php
