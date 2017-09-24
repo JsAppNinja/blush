@@ -32,8 +32,10 @@
                     </script>
 
 
-foo
-<?php echo 'foo'; ?>
+<script>
+    var email = app.user.email;
+    console.log(email);
+</script>
 <script>
  window.intercomSettings = {
   app_id: "w7qc2x21",
