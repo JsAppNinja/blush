@@ -36,7 +36,7 @@
     name: app.user.firstname + app.user.lastname , // Full name
     email: app.user.email, // Email address
     // created_at: <%= current_user.created_at.to_i %> // Signup date as a Unix timestamp
-    user_hash: "<?php $s = hash_hmac('sha256', $user->email, '3qenI3IiDbaxJr5mvLLJA72uASR83w9kTpuhOD4N', true);
+    user_hash: "<?php $s = hash_hmac('sha256', 'kali@joinblush.com', '3qenI3IiDbaxJr5mvLLJA72uASR83w9kTpuhOD4N', true);
 echo base64_encode($s); ?>",
   };
   </script>
