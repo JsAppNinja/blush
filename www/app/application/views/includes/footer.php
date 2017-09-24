@@ -41,7 +41,7 @@
        echo hash_hmac(
          'sha256',
          '$customer->email',
-         '3qenI3IiDbaxJr5mvLLJA72uASR83w9kTpuhOD4N'
+         '3qenI3IiDbaxJr5mvLLJA72uASR83w9kTpuhOD4N', true
        );
      ?>" // HMAC using SHA-256
 };
