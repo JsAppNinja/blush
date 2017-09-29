@@ -127,7 +127,7 @@ small, .small { font-size: 14px; line-height: 20px; }
 html, html a { -webkit-font-smoothing: antialiased !important; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 /* line 12, ../sass/base.scss */
-body { background: #5c2a43; font-family: 'Neutraface 2 Text'; font-size: 16px; font-weight: 300; }
+body { background: #000; font-family: 'Neutraface 2 Text'; font-size: 16px; font-weight: 300; }
 /* line 20, ../sass/base.scss */
 body#app #footer .nav-toggle-container { display: none !important; }
 
