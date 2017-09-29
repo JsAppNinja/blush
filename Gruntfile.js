@@ -71,10 +71,10 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     relativeAssets: false,
-                    httpImagesPath: 'http://198.199.102.227/assets/dist/images',
-                    httpGeneratedImagesPath: 'http://198.199.102.227/assets/dist/images/generated',
-                    httpFontsPath: 'http://198.199.102.227/assets/dist/fonts/',
-                    httpJavascriptsPath: 'http://198.199.102.227/assets/dist/scripts/'
+                    httpImagesPath: 'http://joinblush.com/assets/dist/images',
+                    httpGeneratedImagesPath: 'http://joinblush.com/assets/dist/images/generated',
+                    httpFontsPath: 'http://joinblush.com/assets/dist/fonts/',
+                    httpJavascriptsPath: 'http://joinblush.com/assets/dist/scripts/'
                 }
             },
             server: {
