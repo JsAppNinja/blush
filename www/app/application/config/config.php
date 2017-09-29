@@ -20,10 +20,10 @@ $config['loggly_token'] = 'c27a2843-94a4-43d4-a4eb-55908ee737f6';
 $config['mailgun_key'] = 'key-5ce464a887cd3beaf7c4527c231b8918';
 $config['mailgun_domain'] = 'sandbox3c1034ff0e2147599c7d339fa99588f9.mailgun.org';
 
-$config['domain_url'] = 'http://joinblush.com/';
-$config['base_url'] = 'http:/joinblush.com/app';
-$config['signin_url'] = 'http://joinblush.com/app/login';
-$config['upload_url'] = 'http://joinblush.com/assets/uploads/';
+$config['domain_url'] = 'https://joinblush.com/';
+$config['base_url'] = 'https:/joinblush.com/app';
+$config['signin_url'] = 'https://joinblush.com/app/login';
+$config['upload_url'] = 'https://joinblush.com/assets/uploads/';
 // $config['cdn_url'] = 'https://joinblush.com';
 
 $config['site_title'] = 'Blush';
