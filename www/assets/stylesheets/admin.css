@@ -103,7 +103,7 @@
 .dataTables_wrapper .dataTables_paginate a { display: inline-block; padding: 10px; }
 
 /* line 7, ../sass/admin.scss */
-body#admin { color: #4A4A4A; }
+body#admin { color: #000; }
 /* line 10, ../sass/admin.scss */
 body#admin #header { background: #4A4A4A; border-bottom: 1px #fff solid; padding: 10px 0; color: #fff; }
 /* line 16, ../sass/admin.scss */
