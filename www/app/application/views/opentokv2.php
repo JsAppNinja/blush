@@ -74,7 +74,7 @@
 
     }
     body {
-        background: #fff url('/assets/images/session-loading.png') center center no-repeat;
+        background: #000 url('/assets/images/session-loading.png') center center no-repeat;
         min-height: 590px;
     }
 </style>
