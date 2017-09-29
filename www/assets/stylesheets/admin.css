@@ -88,7 +88,7 @@
 /* line 47, ../sass/_datatable.scss */
 .dataTables_wrapper table tr th, .dataTables_wrapper table tr td { padding: 5px; line-height: 30px; border-bottom: 1px #000 solid; }
 /* line 52, ../sass/_datatable.scss */
-.dataTables_wrapper table tr th { color: #ac738c; font-weight: bold; }
+.dataTables_wrapper table tr th { color: #000; font-weight: bold; }
 /* line 56, ../sass/_datatable.scss */
 .dataTables_wrapper table tr th.sorting, .dataTables_wrapper table tr th.sorting_asc, .dataTables_wrapper table tr th.sorting_desc { cursor: pointer; }
 /* line 61, ../sass/_datatable.scss */
@@ -159,7 +159,7 @@ body#admin .btn.cancel, body#admin .btn:visited.cancel { margin-right: 20px; }
 /* line 180, ../sass/admin.scss */
 body#admin .modal-footer .btn-default { border: 1px #a68c99 solid; color: #ffffff; }
 /* line 186, ../sass/admin.scss */
-body#admin .filter-bar { background: #834864; color: #401b2d; margin: 5px 0; padding: 3px 10px; }
+body#admin .filter-bar { background: #000; color: #fff; margin: 5px 0; padding: 3px 10px; }
 /* line 192, ../sass/admin.scss */
 body#admin .filter-bar label { font-weight: 300; line-height: 30px; }
 /* line 199, ../sass/admin.scss */
@@ -177,7 +177,7 @@ body#admin .submit-container .alert { padding: 12px; margin-right: 20px; }
 /* line 234, ../sass/admin.scss */
 body#admin .submit-container .btn { margin: 0 0 0 10px; }
 /* line 240, ../sass/admin.scss */
-body#admin .std-form .form-control { background: #401b2d; color: #ffffff; border-color: #834864; }
+body#admin .std-form .form-control { background: #000; color: #ffffff; border-color: #000; }
 /* line 22, ../sass/_mixins.scss */
 body#admin .std-form .form-control::-webkit-input-placeholder { color: #ffffff; }
 /* line 26, ../sass/_mixins.scss */
