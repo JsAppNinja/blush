@@ -107,7 +107,7 @@ body#admin { color: #4A4A4A; }
 /* line 10, ../sass/admin.scss */
 body#admin #header { background: #4A4A4A; border-bottom: 1px #fff solid; padding: 10px 0; color: #fff; }
 /* line 16, ../sass/admin.scss */
-body#admin #header .brand { background-image: url('[object Object]/assets/dist/images/logo-footer.png?1499188648'); background-repeat: no-repeat; width: 130px; height: 65px; overflow: hidden; text-indent: -9000px; display: block; font: 0/0 a; text-shadow: none; color: transparent; margin-top: 0; }
+body#admin #header .brand { background-image: url('/assets/dist/images/logo-footer.png?1499188648'); background-repeat: no-repeat; width: 130px; height: 65px; overflow: hidden; text-indent: -9000px; display: block; font: 0/0 a; text-shadow: none; color: transparent; margin-top: 0; }
 /* line 23, ../sass/admin.scss */
 body#admin #header .user-meta .user-name { float: right; margin-right: 35px; }
 /* line 26, ../sass/admin.scss */
