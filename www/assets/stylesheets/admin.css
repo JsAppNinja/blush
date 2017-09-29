@@ -76,17 +76,17 @@
 /* line 9, ../sass/_datatable.scss */
 .dataTables_wrapper .dataTables_length label { color: #401b2d; font-weight: 300; }
 /* line 14, ../sass/_datatable.scss */
-.dataTables_wrapper .dataTables_length select { background: #612c46; color: #ac738c; font-weight: 500; border: 1px #5c2a43 solid; }
+.dataTables_wrapper .dataTables_length select { background: #000; color: #fff; font-weight: 500; border: 1px #000 solid; }
 /* line 22, ../sass/_datatable.scss */
 .dataTables_wrapper .dataTables_filter { float: right; width: 400px; text-align: right; padding: 10px 10px 5px 10px; }
 /* line 27, ../sass/_datatable.scss */
 .dataTables_wrapper .dataTables_filter label { color: #401b2d; font-weight: 300; }
 /* line 32, ../sass/_datatable.scss */
-.dataTables_wrapper .dataTables_filter input { background: #834864; border: 1px #5c2a43 solid; padding: 3px; color: #ac738c; }
+.dataTables_wrapper .dataTables_filter input { background: #fff; border: 1px #4A4A4A solid; padding: 3px; color: #000; }
 /* line 40, ../sass/_datatable.scss */
-.dataTables_wrapper table { clear: both; width: 100%; border-top: 1px #401b2d solid; background: #5c2a43; }
+.dataTables_wrapper table { clear: both; width: 100%; border-top: 1px #4A4A4A solid; background: #fff; }
 /* line 47, ../sass/_datatable.scss */
-.dataTables_wrapper table tr th, .dataTables_wrapper table tr td { padding: 5px; line-height: 30px; border-bottom: 1px #744057 solid; }
+.dataTables_wrapper table tr th, .dataTables_wrapper table tr td { padding: 5px; line-height: 30px; border-bottom: 1px #000 solid; }
 /* line 52, ../sass/_datatable.scss */
 .dataTables_wrapper table tr th { color: #ac738c; font-weight: bold; }
 /* line 56, ../sass/_datatable.scss */
@@ -143,7 +143,7 @@ body#admin #sidebar li.active a, body#admin #sidebar li.active a:active, body#ad
 /* line 114, ../sass/admin.scss */
 body#admin #sidebar li a { line-height: 36px; padding: 10px 20px; color: #ffffff; border-radius: 0; }
 /* line 120, ../sass/admin.scss */
-body#admin #sidebar li a:hover, body#admin #sidebar li a:focus, body#admin #sidebar li a:active { background: #401b2d; color: #905a72; font-weight: bold; }
+body#admin #sidebar li a:hover, body#admin #sidebar li a:focus, body#admin #sidebar li a:active { background: #4A4A4A; color: #fff; font-weight: bold; }
 /* line 130, ../sass/admin.scss */
 body#admin .stat h4 { background: #000; border: 3px #000 solid; color: #fff; text-align: center; line-height: 36px; margin-bottom: 5px; margin-top: -4px; text-transform: none; }
 /* line 141, ../sass/admin.scss */
