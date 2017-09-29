@@ -70,7 +70,7 @@
 .gform_wrapper div.validation_error { font-size: inherit; margin-bottom: 10px; }
 
 /* line 1, ../sass/_datatable.scss */
-.dataTables_wrapper { background: #744057; }
+.dataTables_wrapper { background: #F4F4F4; }
 /* line 4, ../sass/_datatable.scss */
 .dataTables_wrapper .dataTables_length { float: left; width: 200px; padding: 10px; }
 /* line 9, ../sass/_datatable.scss */
