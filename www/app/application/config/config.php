@@ -22,9 +22,9 @@ $config['mailgun_domain'] = 'sandbox3c1034ff0e2147599c7d339fa99588f9.mailgun.org
 
 $config['domain_url'] = 'http://joinblush.com/';
 $config['base_url'] = 'http:/joinblush.com/app';
-$config['signin_url'] = 'http://joinblush.com/app/login';
+$config['signin_url'] = '/app/login';
 $config['upload_url'] = 'http://joinblush.com/assets/uploads/';
-$config['cdn_url'] = 'https://joinblush.com';
+// $config['cdn_url'] = 'https://joinblush.com';
 
 $config['site_title'] = 'Blush';
 $config['site_home'] = 'dashboard';
