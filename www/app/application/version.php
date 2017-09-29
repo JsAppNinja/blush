@@ -1,3 +1,3 @@
 <?
-define("APPVERSION", "1506696388057");
+define("APPVERSION", "1506697074795");
 ?>
