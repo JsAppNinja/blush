@@ -17,8 +17,8 @@
 $config['loggly_tag'] = 'blush';
 $config['loggly_token'] = 'c27a2843-94a4-43d4-a4eb-55908ee737f6';
 
-$config['mailgun_key'] = 'key-5ce464a887cd3beaf7c4527c231b8918';
-$config['mailgun_domain'] = 'sandbox3c1034ff0e2147599c7d339fa99588f9.mailgun.org';
+$config['mailgun_key'] = 'key-a5c411d30e92c5239619d293363e9d1f';
+$config['mailgun_domain'] = 'joinblush.com';
 
 $config['domain_url'] = 'https://joinblush.com/';
 $config['base_url'] = '/app/';
