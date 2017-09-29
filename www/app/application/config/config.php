@@ -24,7 +24,7 @@ $config['domain_url'] = 'https://joinblush.com/';
 $config['base_url'] = 'https:/joinblush.com/app';
 $config['signin_url'] = 'https://joinblush.com/app/login';
 $config['upload_url'] = 'https://joinblush.com/assets/uploads/';
-// $config['cdn_url'] = 'https://joinblush.com';
+$config['cdn_url'] = 'https://joinblush.com';
 
 $config['site_title'] = 'Blush';
 $config['site_home'] = 'dashboard';

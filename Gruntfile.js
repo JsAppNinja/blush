@@ -13,7 +13,7 @@ module.exports = function (grunt) {
     // Define the configuration for all the tasks
     grunt.initConfig({
         app: {
-            cdnUrl: 'http://198.199.102.227',
+            cdnUrl: 'http://joinblush.com',
             views: {
                 includes: 'www/app/application/views/includes'
             },
