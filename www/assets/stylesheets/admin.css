@@ -94,7 +94,7 @@
 /* line 61, ../sass/_datatable.scss */
 .dataTables_wrapper table tr td { cursor: pointer; }
 /* line 66, ../sass/_datatable.scss */
-.dataTables_wrapper table tr:hover td { background: #744057; }
+.dataTables_wrapper table tr:hover td { background: #000; color: #fff; }
 /* line 73, ../sass/_datatable.scss */
 .dataTables_wrapper .dataTables_info { float: left; font-size: 14px; margin: 5px 0 0 10px; }
 /* line 79, ../sass/_datatable.scss */

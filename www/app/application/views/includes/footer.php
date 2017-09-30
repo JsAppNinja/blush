@@ -37,6 +37,7 @@
     $user = get_user();
     // call the key for intercom
     $key = $this->config->item('intercom_key');
+    echo $key;
  ?>
 
 <script>
