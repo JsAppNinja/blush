@@ -23,13 +23,13 @@
 <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
 <script type="text/javascript">Stripe.setPublishableKey('<?=$this->config->item('stripe_public_key')?>');</script>
 <script type="text/javascript">(function () {
-                            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
-                            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
-                                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-                                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
-                                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
-                                var h = d[g]('body')[0];h.appendChild(s); }})();
-                    </script>
+  if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+  if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+      var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+      s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+      s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+      var h = d[g]('body')[0];h.appendChild(s); }})();
+</script>
 
 
 <?php 
@@ -37,7 +37,7 @@
     $user = get_user();
     // call the key for intercom
     $key = $this->config->item('intercom_key');
-    echo $key;
+    // echo $key;
  ?>
 
 <script>
