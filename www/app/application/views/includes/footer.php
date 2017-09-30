@@ -32,26 +32,27 @@
                     </script>
 
 
+<?php 
+    // get the user
+    $user = get_user();
+    // call the key for intercom
+    $key = $this->config->item('intercom_key');
+ ?>
+
 <script>
-    var email = app.user.email;
-    console.log(email);
+  window.intercomSettings = {
+    app_id: "w7qc2x21",
+    name: '<?php $user = get_user(); echo $user->firstname . " " . $user->lastname ?>',
+    email: '<?php $user = get_user(); echo $user->email; ?>',
+    user_hash: "<?php
+      echo hash_hmac(
+        'sha256',
+        $user->email,
+        $key
+      );
+    ?>" // HMAC using SHA-25
+  };
 </script>
-<?php echo $customer->email; ?>
-<script>
- var email = app.user.email;
- 
- window.intercomSettings = {
-  app_id: "w7qc2x21",
-  email: '<?=$customer->email;?>', // Email address
-  user_hash: "<?php
-       echo hash_hmac(
-         'sha256',
-         '$user->email',
-         $this->config->item('intercom_key')
-       );
-     ?>" // HMAC using SHA-256
-};
-  </script>
 
 <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/w7qc2x21';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 </body>
