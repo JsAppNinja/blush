@@ -36,7 +36,7 @@
     // get the user
     $user = get_user();
     // call the key for intercom
-    $key = $this->config->item('intercom_key');
+    $intercomKey = $this->config->item('intercom_key');
     // echo $key;
  ?>
 
@@ -49,7 +49,7 @@
       echo hash_hmac(
         'sha256',
         $user->email,
-        $key
+        $intercomKey
       );
     ?>" // HMAC using SHA-25
   };
