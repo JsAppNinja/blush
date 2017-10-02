@@ -20,8 +20,8 @@ class Configuration extends MY_Model
         return $configuration;
     }
 
-    function get($key) {
-        $this->db->where("key",$key);
+    function get() {
+        // $this->db->where("key",$key);
         $query = $this->db->get($this->get_scope());
         return $query->row();
     }
