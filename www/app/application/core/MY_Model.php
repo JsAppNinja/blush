@@ -170,6 +170,12 @@ class MY_Model extends CI_Model
         $data = array_merge($data, $this->add_data());
 
         $data = $this->update_add_data($data);
+        ob_start();
+        var_dump($data);
+        var_dump($this->get_scope());
+        $result = ob_get_clean();
+        log_message('error', 'TRANSACTION QUERY');
+        log_message('error', $result);
 
         $query = $this->db->query($this->db->insert_string($this->get_scope(), $data));
         $id = $this->db->insert_id();
