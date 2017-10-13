@@ -17,7 +17,7 @@ class Atest extends REST_Controller
     public function runTest(){
     	$this->load->library('uuid');
 
-    	$test_data = array {
+    	$test_data = array(
 	  					"customer_id"=> "732",
 	  					"amount" => 50,
 	  					"stripe_id"=> "so_mefakenonsenseshouldntmatter",
@@ -26,7 +26,7 @@ class Atest extends REST_Controller
 	  					'transaction_nbr' => strtoupper(random_string('alnum', 10)),
 	  					'created' => timestamp_to_mysqldatetime(now()),
 			            'deleted' => 0
-    				}
+    				);
     	print_r($test_data);
     	$transaction_id = $this->Transaction->add($data);
 	}
