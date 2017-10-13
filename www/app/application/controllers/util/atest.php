@@ -1,15 +1,16 @@
-<?php
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 class Atest extends REST_Controller
 {
 
  	public function __construct()
     {
-        // parent::__construct();
-        // $this->load->helper('json');
-        // $this->load->model('Registration');
+        parent::__construct();
+        $this->load->helper('json');
+        $this->load->model('Registration');
     }
 
     public function index(){
+        var_dump('HERE');
     	$this->log_echo("here on the test page");
     	// runTest();
     }
