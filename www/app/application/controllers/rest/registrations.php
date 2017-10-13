@@ -166,6 +166,8 @@ class Registrations extends REST_Controller
                 'diary_cnt' => $diary_cnt,
                 'counseling_cnt' => $counseling_cnt
             );
+            $transaction_specific_data = $this->Transaction->add_data();
+            $data = array_merge($data,$transaction_specific_data);
             $transaction_id = $this->Transaction->add($data);
             if (!$transaction_id) {
                 log_message('error', '[New Registration] A la cart purchase failed database insert');
