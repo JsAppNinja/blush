@@ -6,23 +6,42 @@ class Housekeeper extends MY_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model(array('Event', 'Diary', 'Transaction', 'Transaction_Counselor', 'Payout', 'Plan'));
+        $this->load->model(array('Event', 'Diary', 'Transaction', 'Transaction_Counselor', 'Payout', 'Plan','Registration'));
         $this->load->helper('notification');
     }
 
     public function index()
     {
 
-        $this->clean_stripe_accounts();
 
-        $this->close_out_events();
-        $this->close_out_journals();
+        // $this->clean_stripe_accounts();
 
-        $this->pay_coaches();
+        // $this->close_out_events();
+        // $this->close_out_journals();
 
-        $this->notify_upcoming_event();
+        // $this->pay_coaches();
 
-        $this->notify_upcoming_unpaid_event();
+        // $this->notify_upcoming_event();
+
+        // $this->notify_upcoming_unpaid_event();
+        $this->runTest();
+    }
+
+    public function runTest(){
+         $this->load->library('uuid');
+
+         $test_data = array(
+                             "customer_id"=> 732,
+                             "amount" => 50,
+                             "stripe_id"=> "so_mefakenonsenseshouldntmatter",
+                             "stripe_data"=> "serialized data",
+                             "uuid" => $this->uuid->v4(),
+                             'transaction_nbr' => strtoupper(random_string('alnum', 10)),
+                             'created' => timestamp_to_mysqldatetime(now()),
+                         'deleted' => 0
+                     );
+         print_r($test_data);
+         $transaction_id = $this->Transaction->add($data);
     }
 
     public function clean_stripe_accounts()

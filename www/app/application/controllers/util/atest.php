@@ -11,7 +11,7 @@ class Atest extends REST_Controller
 
     public function index(){
         var_dump('HERE');
-    	$this->log_echo("here on the test page");
+    	//$this->log_echo("here on the test page");
     	// runTest();
     }
 
