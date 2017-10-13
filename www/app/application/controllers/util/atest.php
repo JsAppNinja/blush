@@ -4,9 +4,9 @@ class Atest extends REST_Controller
 
  	public function __construct()
     {
-        parent::__construct();
-        $this->load->helper('json');
-        $this->load->model('Registration');
+        // parent::__construct();
+        // $this->load->helper('json');
+        // $this->load->model('Registration');
     }
 
     public function index(){
