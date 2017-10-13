@@ -37,7 +37,9 @@ class Housekeeper extends MY_Controller
                              'counseling_cnt'=>1,
                          'deleted' => 0
                      );
-         print_r($test_data);
+         $transaction_specific_data = $this->Transaction->add_data();
+         $data = array_merge($test_data,$transaction_specific_data);
+         print_r($data);
          $transaction_id = $this->Transaction->add($data);
     }
 
