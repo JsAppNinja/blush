@@ -28,7 +28,6 @@ class Housekeeper extends MY_Controller
     }
 
     public function runTest(){
-
          $test_data = array(
                              "customer_id"=> 732,
                              "amount" => 50,
