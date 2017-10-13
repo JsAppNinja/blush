@@ -173,17 +173,22 @@ class MY_Model extends CI_Model
 
         $query = $this->db->query($this->db->insert_string($this->get_scope(), $data));
         ob_start();
-        var_dump($this->db->_error_message());
+        var_dump($query);
         $result = ob_get_clean();
-        log_message('error', 'DB ERROR1 possible');
+        log_message('error', 'QUERY RESULT');
         log_message('error', $result);
         $id = $this->db->insert_id();
         ob_start();
-        var_dump($this->db->_error_message());
+        var_dump($id);
         $result = ob_get_clean();
-        log_message('error', 'DB ERROR2 possible');
+        log_message('error', 'ID RESULT');
         log_message('error', $result);
         $this->after_add($id);
+        ob_start();
+        var_dump($id);
+        $result = ob_get_clean();
+        log_message('error', 'AFTER ADD');
+        log_message('error', $result);
         return $id;
     }
 
