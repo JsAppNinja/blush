@@ -31,7 +31,7 @@ class Housekeeper extends MY_Controller
          $test_data = array(
                              "customer_id"=> 732,
                              "amount" => 50,
-                             "stripe_id"=> "so_mefakenonsenseshouldntmatter",
+                             "stripe_id"=> "fa_ke6rba2tjBa8SBT2Y",
                              "stripe_data"=> "serialized data",
                              "diary_cnt" =>1,
                              'counseling_cnt'=>1,
