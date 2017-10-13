@@ -35,7 +35,7 @@ class Housekeeper extends MY_Controller
                              "stripe_id"=> "so_mefakenonsenseshouldntmatter",
                              "stripe_data"=> "serialized data",
                              "diary_cnt" =>1,
-                             'counseling_cnt'=>1),
+                             'counseling_cnt'=>1,
                          'deleted' => 0
                      );
          print_r($test_data);
