@@ -179,7 +179,7 @@ class MY_Model extends CI_Model
         log_message('error', $result);
         $id = $this->db->insert_id();
         ob_start();
-        var_dump($this->db->_error_message()());
+        var_dump($this->db->_error_message();
         $result = ob_get_clean();
         log_message('error', 'DB ERROR2 possible');
         log_message('error', $result);
