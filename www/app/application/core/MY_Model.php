@@ -168,8 +168,10 @@ class MY_Model extends CI_Model
     function add($data)
     {
         $data = array_merge($data, $this->add_data());
+        $this->load->library('uuid');
 
         $data = $this->update_add_data($data);
+        $data['uuid'] =  $this->uuid->v4();
         print_r('data below');
         print_r($data);
         $query = $this->db->query($this->db->insert_string($this->get_scope(), $data));
