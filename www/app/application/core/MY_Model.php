@@ -170,25 +170,16 @@ class MY_Model extends CI_Model
         $data = array_merge($data, $this->add_data());
 
         $data = $this->update_add_data($data);
-
+        print_r('data below');
+        print_r($data);
         $query = $this->db->query($this->db->insert_string($this->get_scope(), $data));
-        ob_start();
-        var_dump($query);
-        $result = ob_get_clean();
-        log_message('error', 'QUERY RESULT');
-        log_message('error', $result);
+        print_r('query result below');
+        print_r($query);
         $id = $this->db->insert_id();
-        ob_start();
-        var_dump($id);
-        $result = ob_get_clean();
-        log_message('error', 'ID RESULT');
-        log_message('error', $result);
+        print_r('query result id below');
+        print_r($id);
         $this->after_add($id);
-        ob_start();
-        var_dump($id);
-        $result = ob_get_clean();
-        log_message('error', 'AFTER ADD');
-        log_message('error', $result);
+       
         return $id;
     }
 
