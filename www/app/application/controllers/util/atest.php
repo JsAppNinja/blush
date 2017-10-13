@@ -10,7 +10,7 @@ class Atest extends REST_Controller
     }
 
     public function index(){
-    	echo "here on the test page";
+    	$this->log_echo("here on the test page");
     	// runTest();
     }
 
