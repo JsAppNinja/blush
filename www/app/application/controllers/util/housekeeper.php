@@ -29,7 +29,7 @@ class Housekeeper extends MY_Controller
 
     public function runTest(){
         
-        //\Stripe\Stripe::setApiKey($this->config->item('stripe_private_key'));
+        \Stripe\Stripe::setApiKey($this->config->item('stripe_private_key'));
 
         //$coaches = $this->User->get_counselors();
         // foreach ($coaches as $coach) {
