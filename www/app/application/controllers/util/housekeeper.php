@@ -37,7 +37,7 @@ class Housekeeper extends MY_Controller
               'destination' => "rp_1ApIzq2tjBa8SBT2p2kp1IOv"
             ));
         $this->log_echo("Test Charge \n<br>");
-        $this->log_echo(print_r($test_charge));
+        $this->log_echo(print_r($test_charge,true));
 //        $account = \Stripe\Account::create(array(
 //            "from_recipient" => "rp_1ApIzq2tjBa8SBT2p2kp1IOv"
 //        ));
@@ -230,19 +230,19 @@ class Housekeeper extends MY_Controller
 
                         if ($amount > 0) {
                             try {
-//                                $transfer = \Stripe\Transfer::create(
-//                                    array("amount" => $amount * 100,
-//                                        "currency" => "usd",
-//                                        "recipient" => $coach->stripe_customer_id,
-//                                        "description" => "Transfer for " . $coach->firstname . " " . $coach->lastname . " for " . sizeof($transactions) . " transactions"
-//                                    )
-//                                );
-                                $args =  array('amount' =>$amount * 100,
-                                    'currency' => 'usd',
-                                    "destination" => array(
-                                        "account"=> $coach->stripe_customer_id
-                                    ));
-                                $transfer = \Stripe\Charge::create($args);
+                                $transfer = \Stripe\Transfer::create(
+                                    array("amount" => $amount * 100,
+                                        "currency" => "usd",
+                                        "recipient" => $coach->stripe_customer_id,
+                                        "description" => "Transfer for " . $coach->firstname . " " . $coach->lastname . " for " . sizeof($transactions) . " transactions"
+                                    )
+                                );
+//                                $args =  array('amount' =>$amount * 100,
+//                                    'currency' => 'usd',
+//                                    "destination" => array(
+//                                        "account"=> $coach->stripe_customer_id
+//                                    ));
+//                                $transfer = \Stripe\Charge::create($args);
                                 $payout_id = $this->Payout->add($transfer, $coach->id);
 
                                 foreach ($transactions as $transaction) {
