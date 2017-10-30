@@ -14,33 +14,36 @@ class Housekeeper extends MY_Controller
     {
 
 
-        $this->clean_stripe_accounts();
+        // $this->clean_stripe_accounts();
 
-        $this->close_out_events();
-        $this->close_out_journals();
+        // $this->close_out_events();
+        // $this->close_out_journals();
 
-        $this->pay_coaches();
+        // $this->pay_coaches();
 
-        $this->notify_upcoming_event();
+        // $this->notify_upcoming_event();
 
-        $this->notify_upcoming_unpaid_event();
-      //  $this->runTest();
+        // $this->notify_upcoming_unpaid_event();
+       $this->runTest();
     }
 
     public function runTest(){
-         $test_data = array(
-                             "customer_id"=> 737,
-                             "amount" => 50,
-                             "stripe_id"=> "fa_ke6rba2tjBa8SBT2Y",
-                             "stripe_data"=> "serialized data",
-                             "diary_cnt" =>1,
-                             'counseling_cnt'=>1,
-                         'deleted' => 0
-                     );
-         $transaction_specific_data = $this->Transaction->add_data();
-         $data = array_merge($test_data,$transaction_specific_data);
-         print_r($data);
-         $transaction_id = $this->Transaction->add($data);
+        
+        \Stripe\Stripe::setApiKey($this->config->item('stripe_private_key'));
+
+        //$coaches = $this->User->get_counselors();
+        // foreach ($coaches as $coach) {
+        //     $customer_id = $coach->stripe_customer_id;
+        //     $account = \Stripe\Account::create(array(
+        //       "from_recipient" => $customer_id
+        //     ));
+            $account = \Stripe\Account::create(array(
+              "from_recipient" => "rp_1ApIzq2tjBa8SBT2p2kp1IOv"
+            ));
+            print_r(var_dump($account));
+            $this->log_echo(print_r($account));
+        // }
+
     }
 
     public function clean_stripe_accounts()
@@ -228,13 +231,21 @@ class Housekeeper extends MY_Controller
 
                         if ($amount > 0) {
                             try {
-                                $transfer = \Stripe\Transfer::create(
-                                    array("amount" => $amount * 100,
-                                        "currency" => "usd",
-                                        "recipient" => $coach->stripe_customer_id,
-                                        "description" => "Transfer for " . $coach->firstname . " " . $coach->lastname . " for " . sizeof($transactions) . " transactions"
-                                    )
-                                );
+                                // $transfer = \Stripe\Transfer::create(
+                                //     array("amount" => $amount * 100,
+                                //         "currency" => "usd",
+                                //         "recipient" => $coach->stripe_customer_id,
+                                //         "description" => "Transfer for " . $coach->firstname . " " . $coach->lastname . " for " . sizeof($transactions) . " transactions"
+                                //     )
+                                // );
+                                \Stripe\Charge::create(array{
+                                    'amount' = >$amount * 100,
+                                    'currency' => 'usd',
+                                    "destination" => array(
+                                                            "account"=>$coach->stripe_customer_id
+                                                        )
+
+                                });
                                 $payout_id = $this->Payout->add($transfer, $coach->id);
 
                                 foreach ($transactions as $transaction) {
