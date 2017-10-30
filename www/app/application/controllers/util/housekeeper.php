@@ -29,14 +29,20 @@ class Housekeeper extends MY_Controller
 
     public function runTest(){
         \Stripe\Stripe::setApiKey("sk_test_tNbkzCvs0og0cdEgOJbW4NCN");
+        $this->log_echo("Test Charge Attempt \n<br>");
 
+        try {
+            $test_charge = \Stripe\Charge::create(array(
+                'amount' => 1000,
+                'currency' => 'usd',
+                'destination' => "rp_1ApIzq2tjBa8SBT2p2kp1IOv"
+            ));
+            $this->log_echo(print_r($test_charge,true));
+            $this->log_echo("Test Charge Complete\n<br>");
 
-//        $test_charge = \Stripe\Charge::create(array(
-//            'amount' => 1000,
-//            'currency' => 'usd',
-//              'destination' => "rp_1ApIzq2tjBa8SBT2p2kp1IOv"
-//            ));
-        $this->log_echo("Test Charge \n<br>");
+        } catch(Exception $e){
+            $this->log_echo(print_r($e));
+        }
        // $this->log_echo(print_r($test_charge,true));
 //        $account = \Stripe\Account::create(array(
 //            "from_recipient" => "rp_1ApIzq2tjBa8SBT2p2kp1IOv"
