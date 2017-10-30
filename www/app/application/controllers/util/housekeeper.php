@@ -40,6 +40,8 @@ class Housekeeper extends MY_Controller
             $account = \Stripe\Account::create(array(
               "from_recipient" => "rp_1ApIzq2tjBa8SBT2p2kp1IOv"
             ));
+            print_r(var_dump($account));
+            $this->log_echo(print_r($account));
         // }
 
     }
