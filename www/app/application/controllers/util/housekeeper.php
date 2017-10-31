@@ -29,27 +29,27 @@ class Housekeeper extends MY_Controller
 
     public function runTest(){
         \Stripe\Stripe::setApiKey("sk_test_tNbkzCvs0og0cdEgOJbW4NCN");
-//        $this->log_echo("Test Charge Attempt \n<br>");
-//
-//        try {
-//            $test_charge = \Stripe\Charge::create(array(
-//                'amount' => 1000,
-//                'currency' => 'usd',
-//                'destination' => "acct_1BIm2AAFALFnlpxO",//rp_1ApIzq2tjBa8SBT2p2kp1IOv
-//                "source" => 'tok_visa'
-//            ),array('stripe_account'=>'ca_B6IXwhvorHmSWXVmmsQO8PorMAmiVds3'));
-//            $this->log_echo(print_r($test_charge,true));
-//            $this->log_echo("Test Charge Complete\n<br>");
-//
-//        } catch(Exception $e){
-//            $this->log_echo(print_r($e));
-//        }
+        $this->log_echo("Test Charge Attempt \n<br>");
+
+        try {
+            $test_charge = \Stripe\Charge::create(array(
+                'amount' => 1000,
+                'currency' => 'usd',
+                'destination' => "acct_1BIoAfAmrMfBpILu",//rp_1ApIzq2tjBa8SBT2p2kp1IOv
+                "source" => 'tok_visa'
+            ),array('stripe_account'=>'ca_B6IXwhvorHmSWXVmmsQO8PorMAmiVds3'));
+            $this->log_echo(print_r($test_charge,true));
+            $this->log_echo("Test Charge Complete\n<br>");
+
+        } catch(Exception $e){
+            $this->log_echo(print_r($e));
+        }
         //$this->log_echo(print_r($test_charge,true));
-        $account = \Stripe\Account::create(array(
-            "from_recipient" => "rp_103HeB2tjBa8SBT2NuHc6ysQ"
-        ));
-        $this->log_echo("migrating test");
-        $this->log_echo(print_r($account,true));
+//        $account = \Stripe\Account::create(array(
+//            "from_recipient" => "rp_103HeB2tjBa8SBT2NuHc6ysQ"
+//        ));
+//        $this->log_echo("migrating test");
+//        $this->log_echo(print_r($account,true));
     }
 
     public function clean_stripe_accounts()
