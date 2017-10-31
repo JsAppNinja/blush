@@ -21,12 +21,11 @@ class Payables extends REST_Controller {
 
         $user = $this->User->load_payable($uuid);
         /* Unset things in the json that aren't necessary */
-        $this->log_echo(print_r($uuid));
-        $this->log_echo(print_r($user));
-        
+        echo var_dump($uuid)."<br/>";
+        echo var_dump($user)."<br/>";
         $user = $this->decorate_object($user);
-        $this->log_echo(print_r('---'));
-        $this->log_echo(print_r($user));
+        echo var_dump($user)."<br/>";
+        
         
         $this->response($user);
     }
