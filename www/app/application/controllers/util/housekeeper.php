@@ -28,7 +28,7 @@ class Housekeeper extends MY_Controller
     }
 
     public function runTest(){
-        \Stripe\Stripe::setApiKey("sk_live_geM6GN7Fvuy2mMNGXIbl8yQP");
+        \Stripe\Stripe::setApiKey("sk_test_tNbkzCvs0og0cdEgOJbW4NCN");
         $this->log_echo("Test Charge Attempt \n<br>");
 
         try {
@@ -37,7 +37,7 @@ class Housekeeper extends MY_Controller
                 'currency' => 'usd',
                 'destination' => "rp_1ApIzq2tjBa8SBT2p2kp1IOv",
                 "source" => 'tok_visa'
-            ),array('stripe_account'=>'acct_1BIm2AAFALFnlpx0'));
+            ),array('stripe_account'=>'acct_1BIm2AAFALFnlpxO'));
             $this->log_echo(print_r($test_charge,true));
             $this->log_echo("Test Charge Complete\n<br>");
 
