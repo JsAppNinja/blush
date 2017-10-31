@@ -21,10 +21,7 @@ class Payables extends REST_Controller {
 
         $user = $this->User->load_payable($uuid);
         /* Unset things in the json that aren't necessary */
-        echo var_dump($uuid)."<br/>";
-        echo var_dump($user)."<br/>";
         $user = $this->decorate_object($user);
-        echo var_dump($user)."<br/>";
         
         
         $this->response($user);
@@ -116,7 +113,7 @@ class Payables extends REST_Controller {
 
     public function decorate_object($object) {
         $object->created = pretty_date_time($object->created);
-        $object->account = '';
+        $object->account = 'holder';
         if ($object->stripe_customer_id) {
             $stripe_recipient = get_stripe_recipient($object->id);
             $object->account = json_decode($stripe_recipient['active_account']);
