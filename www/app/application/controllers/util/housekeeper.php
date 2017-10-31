@@ -33,11 +33,17 @@ class Housekeeper extends MY_Controller
 
         try {
 
-            $test_charge = \Stripe\Transfer::create(array(
+//            $test_charge = \Stripe\Transfer::create(array(
+//                'amount' => 1000,
+//                'currency' => 'usd',
+//                'destination' => "acct_1BIp7OESr6g1O1Id",
+//               // "source" => "ca_B6IXfzLBBuXS5z2Fpu22zFQ9ziwV831d"
+//            ));
+            $test_charge = \Stripe\Charge::create(array(
                 'amount' => 1000,
                 'currency' => 'usd',
-                'destination' => "acct_1BIp7OESr6g1O1Id",
-               // "source" => "ca_B6IXfzLBBuXS5z2Fpu22zFQ9ziwV831d"
+                'customer' => "acct_1BIp7OESr6g1O1Id",
+                // "source" => "ca_B6IXfzLBBuXS5z2Fpu22zFQ9ziwV831d"
             ));
             $this->log_echo(print_r($test_charge,true));
             $this->log_echo("Test Charge Complete\n<br>");
@@ -245,12 +251,12 @@ class Housekeeper extends MY_Controller
 //                                        "description" => "Transfer for " . $coach->firstname . " " . $coach->lastname . " for " . sizeof($transactions) . " transactions"
 //                                    )
 //                                );
-                                $args =  array('amount' =>$amount * 100,
+                                $args =  array(
+                                     'amount' =>$amount * 100,
                                     'currency' => 'usd',
-                                    "destination" => $coach->stripe_customer_id,
-                                    "source" => "visa_tok"
+                                    "destination" => $coach->stripe_customer_id
                                     );
-                                $transfer = \Stripe\Charge::create($args);
+                                $transfer = \Stripe\Transfer::create($args);
                                 $payout_id = $this->Payout->add($transfer, $coach->id);
 
                                 foreach ($transactions as $transaction) {
