@@ -121,7 +121,7 @@ class Payables extends REST_Controller {
         $object->account = 'blah';
         $sid = $object->stripe_customer_id;
         $id = $object->id;
-        $object->account = 'sid: ' . var_dump($sid) . ', $id: ' . var_dump($id) . ', recip: ' . var_dump($holder);
+        $object->account = 'sid: ' . var_dump('var allowed');// . ', $id: ' . var_dump($id) . ', recip: ' . var_dump($holder);
         return $object;
     }
 }
