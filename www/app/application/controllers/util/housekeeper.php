@@ -14,21 +14,19 @@ class Housekeeper extends MY_Controller
     {
 
 
-//         $this->clean_stripe_accounts();
-//
-//         $this->close_out_events();
-//         $this->close_out_journals();
-//
-//         $this->pay_coaches();
-//
-//         $this->notify_upcoming_event();
-//
-//         $this->notify_upcoming_unpaid_event();
-        $this->runTest();
+         $this->clean_stripe_accounts();
+
+         $this->close_out_events();
+         $this->close_out_journals();
+
+         $this->pay_coaches();
+
+         $this->notify_upcoming_event();
+
+         $this->notify_upcoming_unpaid_event();
     }
 
     public function runTest(){
-        \Stripe\Stripe::setApiKey("sk_live_geM6GN7Fvuy2mMNGXIbl8yQP");//sk_test_tNbkzCvs0og0cdEgOJbW4NCN
 //        $this->log_echo("Test Charge Attempt \n<br>");
 //
 //        try {
@@ -52,18 +50,18 @@ class Housekeeper extends MY_Controller
 //            $this->log_echo(print_r($e));
 //        }
 //
-        $coaches = $this->User->get_counselors();
-        foreach ($coaches as $coach) {
-            try {
-                $account = \Stripe\Account::create(array(
-                        "from_recipient" => $coach->stripe_customer_id
-                    )
-                );
-                $this->log_echo(print_r($account));
-            }catch(Exception $e){
-                $this->log_echo(print_r($e));
-            }
-        }
+//        $coaches = $this->User->get_counselors();
+//        foreach ($coaches as $coach) {
+//            try {
+//                $account = \Stripe\Account::create(array(
+//                        "from_recipient" => $coach->stripe_customer_id
+//                    )
+//                );
+//                $this->log_echo(print_r($account));
+//            }catch(Exception $e){
+//                $this->log_echo(print_r($e));
+//            }
+//        }
        // $this->log_echo(print_r($test_charge,true));
 //        $account = \Stripe\Account::create(array(
 //            "from_recipient" => "rp_103OTy2tjBa8SBT247Q5SmBJ"
