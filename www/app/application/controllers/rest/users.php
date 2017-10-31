@@ -356,7 +356,7 @@ class Users extends REST_Controller
             $customer = '';
             try {
                 if ($user->stripe_customer_id) {
-                    $customer = \Stripe\Recipient::retrieve($user->stripe_customer_id);
+                    $customer = \Stripe\Account::retrieve($user->stripe_customer_id);
                 }
             } catch (Exception $e) {
                 log_message('info', '[Create Stripe Checking] Stripe_Customer::retrieve Exception: '.$e->getMessage());
