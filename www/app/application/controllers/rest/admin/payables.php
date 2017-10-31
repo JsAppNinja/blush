@@ -112,10 +112,13 @@ class Payables extends REST_Controller {
     public function decorate_object($object) {
         $object->created = pretty_date_time($object->created);
         $object->account = '';
+        $holder = '';
         if ($object->stripe_customer_id) {
             $stripe_recipient = get_stripe_recipient($object->id);
             $object->account = json_decode($stripe_recipient['active_account']);
+            $holder = $stripe_recipient['active_account'];
         }
+        $object->account->bank_name = $object->stripe_customer_id . ' ' . $object->id . ' ' . var_dump($holder);
         return $object;
     }
 }
