@@ -35,9 +35,9 @@ class Housekeeper extends MY_Controller
             $test_charge = \Stripe\Charge::create(array(
                 'amount' => 1000,
                 'currency' => 'usd',
-                'destination' => "ba_1ApIzp2tjBa8SBT2Hd5OCEvf",//rp_1ApIzq2tjBa8SBT2p2kp1IOv
+                'destination' => "acct_1BIm2AAFALFnlpxO",//rp_1ApIzq2tjBa8SBT2p2kp1IOv
                 "source" => 'tok_visa'
-            ),array('stripe_account'=>'acct_1BIm2AAFALFnlpxO'));
+            ),array('stripe_account'=>'ca_B6IXwhvorHmSWXVmmsQO8PorMAmiVds3'));
             $this->log_echo(print_r($test_charge,true));
             $this->log_echo("Test Charge Complete\n<br>");
 
