@@ -36,8 +36,8 @@ class Housekeeper extends MY_Controller
                 'amount' => 1000,
                 'currency' => 'usd',
                 'destination' => "acct_1BIoAfAmrMfBpILu",////rp_103HeB2tjBa8SBT2NuHc6ysQ
-               // "source" => 'tok_visa'
-            )/*,array('stripe_account'=>'ca_B6IXwhvorHmSWXVmmsQO8PorMAmiVds3')*/);//ca_B6IXwhvorHmSWXVmmsQO8PorMAmiVds3
+                "source" => 'tok_visa'
+            ));//ca_B6IXwhvorHmSWXVmmsQO8PorMAmiVds3
             $this->log_echo(print_r($test_charge,true));
             $this->log_echo("Test Charge Complete\n<br>");
 
