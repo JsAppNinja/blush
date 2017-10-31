@@ -33,11 +33,11 @@ class Housekeeper extends MY_Controller
 
         try {
 
-            $test_charge = \Stripe\Charge::create(array(
+            $test_charge = \Stripe\Transfer::create(array(
                 'amount' => 1000,
                 'currency' => 'usd',
                 'destination' => "acct_1BIp7OESr6g1O1Id",
-                "source" => "ca_B6IXfzLBBuXS5z2Fpu22zFQ9ziwV831d"
+               // "source" => "ca_B6IXfzLBBuXS5z2Fpu22zFQ9ziwV831d"
             ));
             $this->log_echo(print_r($test_charge,true));
             $this->log_echo("Test Charge Complete\n<br>");
