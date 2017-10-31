@@ -237,7 +237,7 @@ class Housekeeper extends MY_Controller
                 } else {
                     $recipient = null;
                     try {
-                        $recipient = \Stripe\Recipient::retrieve($coach->stripe_customer_id);
+                        $recipient = \Stripe\Account::retrieve($coach->stripe_customer_id);
 
                     } catch (Exception $e) {
                         $this->log_echo(sprintf("Exception while retrieving recipient for coach %s: '%s'", $coach->firstname . " " . $coach->lastname, $e->getMessage()));
