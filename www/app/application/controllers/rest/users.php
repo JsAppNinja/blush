@@ -369,7 +369,7 @@ class Users extends REST_Controller
                     $customer->save();
 
                 } else {
-                    $customer = \Stripe\Recipient::create(array(
+                    $customer = \Stripe\Account::create(array(
                         "bank_account" => $stripe_token,
                         "name" => $user->firstname." ".$user->lastname,
                         "type" => "corporation",
