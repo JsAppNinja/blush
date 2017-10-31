@@ -131,15 +131,15 @@ function get_stripe_recipient($user_id = 0)
 
     $user = get_user($user_id);
     if ($user && $user->stripe_customer_id) {
-        $recipient = unserialize($CI->session->userdata('stripe_recipient'));
-        if (!$recipient) {
+        //$recipient = unserialize($CI->session->userdata('stripe_recipient'));
+       // if (!$recipient) {
             try {
                 $recipient = \Stripe\Account::retrieve($user->stripe_customer_id);
                 $CI->session->set_userdata('stripe_recipient', serialize($recipient));
             } catch (Exception $e) {
                 log_message('info', '[get_stripe_recipient] Stripe_Customer::retrieve Exception: '.$e->getMessage());
             }
-        }
+      // }
         return $recipient;
     }
 }
