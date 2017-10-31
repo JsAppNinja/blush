@@ -28,7 +28,7 @@ class Housekeeper extends MY_Controller
     }
 
     public function runTest(){
-        \Stripe\Stripe::setApiKey("sk_test_tNbkzCvs0og0cdEgOJbW4NCN");
+        \Stripe\Stripe::setApiKey("pk_test_1RDlFmSQG3Mvf3q8GgfmvCiL");//sk_test_tNbkzCvs0og0cdEgOJbW4NCN
         $this->log_echo("Test Charge Attempt \n<br>");
 
         try {
