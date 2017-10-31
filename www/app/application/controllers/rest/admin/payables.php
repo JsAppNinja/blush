@@ -116,7 +116,6 @@ class Payables extends REST_Controller {
             $stripe_recipient = get_stripe_recipient($object->id);
             $object->account = json_decode($stripe_recipient['active_account']);
         }
-        $object->account  = "holder";
         return $object;
     }
 }
