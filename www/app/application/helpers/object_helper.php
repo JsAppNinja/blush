@@ -127,25 +127,23 @@ function get_stripe_recipient($user_id = 0)
 {
     $CI =& get_instance();
 
-    \Stripe\Stripe::setApiKey($CI->config->item('stripe_private_key'));
+    // \Stripe\Stripe::setApiKey($CI->config->item('stripe_private_key'));
+    \Stripe\Stripe::setApiKey('sk_live_geM6GN7Fvuy2mMNGXIbl8yQP');
 
     $user = get_user($user_id);
     if ($user && $user->stripe_customer_id) {
-        //$recipient = unserialize($CI->session->userdata('stripe_recipient'));
-        $recipient = '';
-       // if (!$recipient) {
         $error = 'error';
-            try {
-                $recipient = \Stripe\Account::retrieve('acct_1BIp7OESr6g1O1Id');
-                // $recipient = \Stripe\Account::retrieve($user->stripe_customer_id);
-               // $CI->session->set_userdata('stripe_recipient', serialize($recipient));
-            } catch (Exception $e) {
-                $error = $e;
-                log_message('info', '[get_stripe_recipient] Stripe_Customer::retrieve Exception: '.$e->getMessage());
-            }
-      // }
+        try {
+            $recipient = \Stripe\Account::retrieve($user->stripe_customer_id);
+            $CI->session->set_userdata('stripe_recipient', serialize($recipient));
+        } catch (Exception $e) {
+            $error = $e;
+            log_message('info', '[get_stripe_recipient] Stripe_Customer::retrieve Exception: '.$e->getMessage());
+            $recipient = 'nothing';
+        }
         return array($recipient,$error,$user->stripe_customer_id);
     }
+    return "";
 }
 
 function get_blush_data()
