@@ -14,17 +14,17 @@ class Housekeeper extends MY_Controller
     {
 
 
-         // $this->clean_stripe_accounts();
+         $this->clean_stripe_accounts();
 
-         // $this->close_out_events();
-         // $this->close_out_journals();
+         $this->close_out_events();
+         $this->close_out_journals();
 
-         // $this->pay_coaches();
+         $this->pay_coaches();
 
-         // $this->notify_upcoming_event();
+         $this->notify_upcoming_event();
 
-         // $this->notify_upcoming_unpaid_event();
-        $this->runTest();
+         $this->notify_upcoming_unpaid_event();
+       // $this->runTest();
     }
 
     public function runTest(){
