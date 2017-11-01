@@ -1,4 +1,4 @@
-
+<%= thing %>
 <% if (!account) { %>
     <div class='alert alert-warning row'>
         <p class="col-lg-9">This counselor has not added a bank account to the site and cannot be paid.  If you want to
