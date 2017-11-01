@@ -120,7 +120,7 @@ class Payables extends REST_Controller {
 
             $holder = ($stripe_recipient['external_accounts']);
         }
-        $object->thing = 'here '. strval($holder);
+        $object->thing = 'here1 '. strval($holder);
         return $object;
     }
 }
