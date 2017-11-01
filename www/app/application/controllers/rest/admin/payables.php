@@ -116,9 +116,9 @@ class Payables extends REST_Controller {
         if ($object->stripe_customer_id) {
             $stripe_recipient = get_stripe_recipient($object->id);
             // $object->account = json_decode($stripe_recipient[0]['active_account']);
-            $object->account = ($stripe_recipient['external_accounts']['data'][0]);
+            $object->account = (array) $stripe_recipient['external_accounts']['data'][0];
 
-            $holder = ($stripe_recipient['external_accounts']['data'][0]->bank_name);
+            $holder = (array)($stripe_recipient['external_accounts']['data'][0]);
             $type = strval(gettype($holder));
         }
         $object->thing = 'here1 '. strval($holder) . $type;
