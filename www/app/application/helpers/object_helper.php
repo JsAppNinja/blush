@@ -130,18 +130,15 @@ function get_stripe_recipient($user_id = 0)
     \Stripe\Stripe::setApiKey($CI->config->item('stripe_private_key'));
 
     $user = get_user($user_id);
-    return \Stripe\Account::retrieve($user->stripe_customer_id);
     if ($user && $user->stripe_customer_id) {
-        $error = 'error';
         try {
             $recipient = \Stripe\Account::retrieve($user->stripe_customer_id);
             $CI->session->set_userdata('stripe_recipient', serialize($recipient));
         } catch (Exception $e) {
             $error = $e;
             log_message('info', '[get_stripe_recipient] Stripe_Customer::retrieve Exception: '.$e->getMessage());
-            $recipient = 'nothing';
         }
-        return array($recipient,$error,$user->stripe_customer_id);
+        return $recipient;
     }
     return "";
 }
