@@ -132,6 +132,7 @@ function get_stripe_recipient($user_id = 0)
     $user = get_user($user_id);
     if ($user && $user->stripe_customer_id) {
         //$recipient = unserialize($CI->session->userdata('stripe_recipient'));
+        $recipient = '';
        // if (!$recipient) {
         $error = 'error';
             try {
