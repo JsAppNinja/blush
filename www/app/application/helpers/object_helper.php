@@ -128,7 +128,7 @@ function get_stripe_recipient($user_id = 0)
     $CI =& get_instance();
 
     // \Stripe\Stripe::setApiKey($CI->config->item('stripe_private_key'));
-    \Stripe\Stripe::setApiKey('sk_live_geM6GN7Fvuy2mMNGXIbl8yQP');
+    \Stripe\Stripe::setApiKey('sk_live_geM6GN7Fvuy2mMNGXIbl8yQPz');
 
     $user = get_user($user_id);
     if ($user && $user->stripe_customer_id) {
