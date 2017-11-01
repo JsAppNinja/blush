@@ -14,19 +14,28 @@ class Housekeeper extends MY_Controller
     {
 
 
-         $this->clean_stripe_accounts();
+         // $this->clean_stripe_accounts();
 
-         $this->close_out_events();
-         $this->close_out_journals();
+         // $this->close_out_events();
+         // $this->close_out_journals();
 
-         $this->pay_coaches();
+         // $this->pay_coaches();
 
-         $this->notify_upcoming_event();
+         // $this->notify_upcoming_event();
 
-         $this->notify_upcoming_unpaid_event();
+         // $this->notify_upcoming_unpaid_event();
+        $this->runTest();
     }
 
     public function runTest(){
+        \Stripe\Stripe::setApiKey($CI->config->item('stripe_private_key'));
+        try{
+            $account = \Stripe\Account::retrieve('acct_1BIp7OESr6g1O1Id');
+            $this->log_echo(print_r($account));
+        }
+         catch(Exception $e){
+           $this->log_echo(print_r($e));
+        }
 //        $this->log_echo("Test Charge Attempt \n<br>");
 //
 //        try {
