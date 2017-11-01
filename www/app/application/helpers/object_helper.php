@@ -142,7 +142,7 @@ function get_stripe_recipient($user_id = 0)
                 log_message('info', '[get_stripe_recipient] Stripe_Customer::retrieve Exception: '.$e->getMessage());
             }
       // }
-        return array($recipient,$error);
+        return array($recipient,$error,$user->stripe_customer_id);
     }
 }
 
