@@ -28,7 +28,7 @@ class Housekeeper extends MY_Controller
     }
 
     public function runTest(){
-        \Stripe\Stripe::setApiKey($CI->config->item('stripe_private_key'));
+        \Stripe\Stripe::setApiKey($this->config->item('stripe_private_key'));
         try{
             $account = \Stripe\Account::retrieve('acct_1BIp7OESr6g1O1Id');
             $this->log_echo(print_r($account));
