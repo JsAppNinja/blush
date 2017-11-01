@@ -139,7 +139,6 @@ function get_stripe_recipient($user_id = 0)
                 $recipient = \Stripe\Account::retrieve('acct_1BIp7OESr6g1O1Id');
                 // $recipient = \Stripe\Account::retrieve($user->stripe_customer_id);
                // $CI->session->set_userdata('stripe_recipient', serialize($recipient));
-                return $recipient;
             } catch (Exception $e) {
                 $error = $e;
                 log_message('info', '[get_stripe_recipient] Stripe_Customer::retrieve Exception: '.$e->getMessage());
