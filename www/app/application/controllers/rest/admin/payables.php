@@ -118,7 +118,7 @@ class Payables extends REST_Controller {
             // $object->account = json_decode($stripe_recipient[0]['active_account']);
             $object->account = json_decode($stripe_recipient['external_accounts']);
 
-            $holder = ($stripe_recipient['external_accounts']);
+            $holder = ($stripe_recipient['external_accounts']['data'][0]);
         }
         $object->thing = 'here1 '. strval($holder);
         return $object;
