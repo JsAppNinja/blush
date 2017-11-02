@@ -20,7 +20,7 @@ class Payout extends MY_Model
         $amount = $transfer['amount'];
 
         $data = array(
-            'creator_id' => 42,//intval(get_user_id()),
+            'creator_id' => intval(get_user_id()),
             'counselor_id' => $counselor_id,
             'amount' => number_format($amount / 100, 2),
             'uuid' => $this->uuid->v4(),
