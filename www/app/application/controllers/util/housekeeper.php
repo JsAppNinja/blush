@@ -271,7 +271,7 @@ class Housekeeper extends MY_Controller
 //                                        "description" => "Transfer for " . $coach->firstname . " " . $coach->lastname . " for " . sizeof($transactions) . " transactions"
 //                                    )
 //                                );
-                                $this->log_echo(sprintf('Coach ID [%d] Coach customer [%d]',$coach->id,$coach->stripe_customer_id));
+                                $this->log_echo(sprintf('Coach ID [%d] Coach customer [%s]',$coach->id,$coach->stripe_customer_id));
                                 $args =  array(
                                      'amount' =>$amount * 100,
                                     'currency' => 'usd',
