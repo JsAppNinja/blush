@@ -14,16 +14,16 @@ class Housekeeper extends MY_Controller
     {
 
 
-         $this->clean_stripe_accounts();
+         //$this->clean_stripe_accounts();
 
-         $this->close_out_events();
-         $this->close_out_journals();
+        // $this->close_out_events();
+        // $this->close_out_journals();
 
          $this->pay_coaches();
 
-         $this->notify_upcoming_event();
+        // $this->notify_upcoming_event();
 
-         $this->notify_upcoming_unpaid_event();
+        // $this->notify_upcoming_unpaid_event();
        // $this->runTest();
     }
 
@@ -258,7 +258,7 @@ class Housekeeper extends MY_Controller
                     if ($recipient) {
                         $amount = 0;
                         foreach ($transactions as $transaction) {
-                            $this->log_echo(sprintf("Paying [%d] for Transaction ID [%d] for amount [%d]", $coach->firstname . " " . $coach->lastname, $transaction->id, $transaction->amount));
+                            $this->log_echo(sprintf("Paying [%s] for Transaction ID [%d] for amount [%d]", $coach->firstname . " " . $coach->lastname, $transaction->id, $transaction->amount));
                             $amount += $transaction->amount;
                         }
 
@@ -271,6 +271,7 @@ class Housekeeper extends MY_Controller
 //                                        "description" => "Transfer for " . $coach->firstname . " " . $coach->lastname . " for " . sizeof($transactions) . " transactions"
 //                                    )
 //                                );
+                                $this->log_echo(sprintf('Coach ID [%d] Coach customer [%d]',$coach->id,$coach->stripe_customer_id));
                                 $args =  array(
                                      'amount' =>$amount * 100,
                                     'currency' => 'usd',
