@@ -42,7 +42,7 @@ class Payables extends REST_Controller {
                     $transfer = \Stripe\Transfer::create(
                         array( "amount" => $counselor->amount*100,
                             "currency" => "usd",
-                            "recipient" => $counselor->stripe_customer_id,
+                            "destination" => $counselor->stripe_customer_id,
                             "description" => "Transfer for ".$counselor->firstname." ".$counselor->lastname
                         )
                     );
