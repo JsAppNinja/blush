@@ -25,6 +25,7 @@
 <script>
 
   window.intercomSettings = {
+    app_id: "w7qc2x21",
     name: '<?php $user = get_user(); echo $user->firstname . " " . $user->lastname ?>',
     email: '<?php $user = get_user(); echo $user->email; ?>',
     user_hash: "<?php
