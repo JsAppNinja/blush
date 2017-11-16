@@ -23,8 +23,7 @@
 <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
 <script type="text/javascript">Stripe.setPublishableKey('<?=$this->config->item('stripe_public_key')?>');</script>
 <script>
-  thisUser = <?= get_user() ?>;
-  thisUserName = thisUser->name;
+
   window.intercomSettings = {
     name: '<?php $user = get_user(); echo $user->firstname . " " . $user->lastname ?>',
     email: '<?php $user = get_user(); echo $user->email; ?>',
