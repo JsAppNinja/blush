@@ -22,6 +22,8 @@
 <script src="/app/partials/all" type="text/javascript"></script>
 <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
 <script type="text/javascript">Stripe.setPublishableKey('<?=$this->config->item('stripe_public_key')?>');</script>
+
+<?= $intercomKey = $this->config->item('intercom_key'); ?>
 <script>
 
   window.intercomSettings = {
@@ -32,7 +34,7 @@
        echo hash_hmac(
          'sha256',
          $user->email,
-         $key
+         $intercom_key
        );
        ?>"
   };
