@@ -22,10 +22,10 @@
 <script src="/app/partials/all" type="text/javascript"></script>
 <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
 <script type="text/javascript">Stripe.setPublishableKey('<?=$this->config->item('stripe_public_key')?>');</script>
-
+<?= $intercomKey = $this->config->item('intercom_key'); ?>
 
 <script>
-  <?= $intercomKey = $this->config->item('intercom_key'); ?>
+  
   window.intercomSettings = {
     app_id: "w7qc2x21",
     name: '<?php $user = get_user(); echo $user->firstname . " " . $user->lastname ?>',
