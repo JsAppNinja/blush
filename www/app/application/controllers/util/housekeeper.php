@@ -6,23 +6,77 @@ class Housekeeper extends MY_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model(array('Event', 'Diary', 'Transaction', 'Transaction_Counselor', 'Payout', 'Plan'));
+        $this->load->model(array('Event', 'Diary', 'Transaction', 'Transaction_Counselor', 'Payout', 'Plan','Registration'));
         $this->load->helper('notification');
     }
 
     public function index()
     {
 
-        $this->clean_stripe_accounts();
 
-        $this->close_out_events();
-        $this->close_out_journals();
+         $this->clean_stripe_accounts();
 
-        $this->pay_coaches();
+         $this->close_out_events();
+         $this->close_out_journals();
 
-        $this->notify_upcoming_event();
+         $this->pay_coaches();
 
-        $this->notify_upcoming_unpaid_event();
+         $this->notify_upcoming_event();
+
+         $this->notify_upcoming_unpaid_event();
+       // $this->runTest();
+    }
+
+    public function runTest(){
+        \Stripe\Stripe::setApiKey($this->config->item('stripe_private_key'));
+        try{
+            $account = \Stripe\Account::retrieve('acct_1BIp7OESr6g1O1Id');
+            $this->log_echo(print_r($account));
+        }
+         catch(Exception $e){
+           $this->log_echo(print_r($e));
+        }
+//        $this->log_echo("Test Charge Attempt \n<br>");
+//
+//        try {
+//
+////            $test_charge = \Stripe\Transfer::create(array(
+////                'amount' => 1000,
+////                'currency' => 'usd',
+////                'destination' => "acct_1BIp7OESr6g1O1Id",
+////               // "source" => "ca_B6IXfzLBBuXS5z2Fpu22zFQ9ziwV831d"
+////            ));
+//            $test_charge = \Stripe\Charge::create(array(
+//                'amount' => 1000,
+//                'currency' => 'usd',
+//                'customer' => "cus_BgCDoenQzfAu6U",
+//                // "source" => "ca_B6IXfzLBBuXS5z2Fpu22zFQ9ziwV831d"
+//            ));
+//            $this->log_echo(print_r($test_charge,true));
+//            $this->log_echo("Test Charge Complete\n<br>");
+//
+//        } catch(Exception $e){
+//            $this->log_echo(print_r($e));
+//        }
+//
+//        $coaches = $this->User->get_counselors();
+//        foreach ($coaches as $coach) {
+//            try {
+//                $account = \Stripe\Account::create(array(
+//                        "from_recipient" => $coach->stripe_customer_id
+//                    )
+//                );
+//                $this->log_echo(print_r($account));
+//            }catch(Exception $e){
+//                $this->log_echo(print_r($e));
+//            }
+//        }
+       // $this->log_echo(print_r($test_charge,true));
+//        $account = \Stripe\Account::create(array(
+//            "from_recipient" => "rp_103OTy2tjBa8SBT247Q5SmBJ"
+//        ));
+//        $this->log_echo("migrating test");
+//        $this->log_echo(print_r($account,true));
     }
 
     public function clean_stripe_accounts()
@@ -192,7 +246,7 @@ class Housekeeper extends MY_Controller
                 } else {
                     $recipient = null;
                     try {
-                        $recipient = \Stripe\Recipient::retrieve($coach->stripe_customer_id);
+                        $recipient = \Stripe\Account::retrieve($coach->stripe_customer_id);
 
                     } catch (Exception $e) {
                         $this->log_echo(sprintf("Exception while retrieving recipient for coach %s: '%s'", $coach->firstname . " " . $coach->lastname, $e->getMessage()));
@@ -204,19 +258,26 @@ class Housekeeper extends MY_Controller
                     if ($recipient) {
                         $amount = 0;
                         foreach ($transactions as $transaction) {
-                            $this->log_echo(sprintf("Paying [%d] for Transaction ID [%d] for amount [%d]", $coach->firstname . " " . $coach->lastname, $transaction->id, $transaction->amount));
+                            $this->log_echo(sprintf("Paying [%s] for Transaction ID [%d] for amount [%d]", $coach->firstname . " " . $coach->lastname, $transaction->id, $transaction->amount));
                             $amount += $transaction->amount;
                         }
 
                         if ($amount > 0) {
                             try {
-                                $transfer = \Stripe\Transfer::create(
-                                    array("amount" => $amount * 100,
-                                        "currency" => "usd",
-                                        "recipient" => $coach->stripe_customer_id,
-                                        "description" => "Transfer for " . $coach->firstname . " " . $coach->lastname . " for " . sizeof($transactions) . " transactions"
-                                    )
-                                );
+//                                $transfer = \Stripe\Transfer::create(
+//                                    array("amount" => $amount * 100,
+//                                        "currency" => "usd",
+//                                        "recipient" => $coach->stripe_customer_id,
+//                                        "description" => "Transfer for " . $coach->firstname . " " . $coach->lastname . " for " . sizeof($transactions) . " transactions"
+//                                    )
+//                                );
+                                $this->log_echo(sprintf('Coach ID [%d] Coach customer [%s]',$coach->id,$coach->stripe_customer_id));
+                                $args =  array(
+                                     'amount' =>$amount * 100,
+                                    'currency' => 'usd',
+                                    "destination" => $coach->stripe_customer_id
+                                    );
+                                $transfer = \Stripe\Transfer::create($args);
                                 $payout_id = $this->Payout->add($transfer, $coach->id);
 
                                 foreach ($transactions as $transaction) {

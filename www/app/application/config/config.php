@@ -57,7 +57,6 @@ $config['plivo_number'] = '16622606907';
 
 $config['intercom_key'] = '3qenI3IiDbaxJr5mvLLJA72uASR83w9kTpuhOD4N';
 $config['intercom_email'] = 'kali@bjoinblush.com';
-
 if (IS_TEST) {
 
     $config['stripe_public_key'] = 'pk_test_1RDlFmSQG3Mvf3q8GgfmvCiL';

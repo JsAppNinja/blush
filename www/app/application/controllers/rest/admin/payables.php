@@ -42,7 +42,7 @@ class Payables extends REST_Controller {
                     $transfer = \Stripe\Transfer::create(
                         array( "amount" => $counselor->amount*100,
                             "currency" => "usd",
-                            "recipient" => $counselor->stripe_customer_id,
+                            "destination" => $counselor->stripe_customer_id,
                             "description" => "Transfer for ".$counselor->firstname." ".$counselor->lastname
                         )
                     );
@@ -112,12 +112,13 @@ class Payables extends REST_Controller {
     public function decorate_object($object) {
         $object->created = pretty_date_time($object->created);
         $object->account = '';
+        $holder = '';
         if ($object->stripe_customer_id) {
             $stripe_recipient = get_stripe_recipient($object->id);
-            $object->account = json_decode($stripe_recipient['active_account']);
+            $object->account_data = str_replace("Stripe\Account JSON: ", "", $stripe_recipient);
         }
-
         return $object;
     }
+
 }
 ?>
