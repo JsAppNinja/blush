@@ -373,7 +373,8 @@ class Users extends REST_Controller
                         "bank_account" => $stripe_token,
                         "name" => $user->firstname." ".$user->lastname,
                         "type" => "corporation",
-                        "email" => $user->email
+                        "email" => $user->email,
+                        'type' => 'custom'
                     ));
                 }
                 $this->User->set_stripe_data($user->id, $customer);
