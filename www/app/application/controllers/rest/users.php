@@ -370,16 +370,15 @@ class Users extends REST_Controller
 
                 } else {
                     $customer = \Stripe\Account::create(array(
-                        "bank_account" => $stripe_token,
-                        "name" => $user->firstname." ".$user->lastname,
-                        "type" => "corporation",
+//                        "bank_account" => $stripe_token,
+                        "business_name" => $user->firstname." ".$user->lastname,
                         "email" => $user->email,
                         'type' => 'custom'
                     ));
                 }
                 $this->User->set_stripe_data($user->id, $customer);
             } catch (Exception $e) {
-                log_message('info', '[Create Stripe Checking] Stripe_Recipient::create Exception: '.$e->getMessage());
+                log_message('info', '[Create Stripe Checking] Stripe_account::create Exception: '.$e->getMessage());
                 $error = sprintf('There was a problem processing your account. The error returned from the financial gateway was \'%s\'', $e->getMessage());
                 json_error($error);
             }
