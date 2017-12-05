@@ -192,6 +192,14 @@ class Users extends REST_Controller
             }
         }
 
+        /** Agreeing to TOS */
+        if($this->put('TosAgree')){
+            json_error("Testing 123");
+        }
+        else{
+            json_error(strval($this->put('TosAgree')));
+        }
+
         /** Are they changing their plan? */
         if (intval($this->put('plan_id')) && $this->put('plan_id') != $user->plan_id) {
             $this->update_subscription($user);

@@ -74,7 +74,7 @@ if($stripe_recipient && !$stripe_recipient['deleted'] && $stripe_recipient['acti
         </div>
         <input id="TosAgree" type="checkbox">
         <label for="TosAgree">I Agree</label>
-        <div class="btn-primary TosAgreeBtn">Agree</div>
+        <div class="btn-primary TosAgreeBtn" style="width:75px;padding:5px;">Submit</div>
     </div>
 </div>
 <% } %>
