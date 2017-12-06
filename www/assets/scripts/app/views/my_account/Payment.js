@@ -73,13 +73,15 @@ app.PaymentView = app.BaseFormView.extend({
             accountNumber:$('.account-number').val()
         }, function (status, response) {
 
-            if (response.error) {
-                var alert = me.$el.find('.submit-container .alert-danger');
-                alert.show().text(response.error.message);
-                submit_button.button('reset');
-            } else {
-                me.save_success(response, 'checking');
-            }
+            me.save_success(response, 'checking');
+            //
+            // if (response.error) {
+            //     var alert = me.$el.find('.submit-container .alert-danger');
+            //     alert.show().text(response.error.message);
+            //     submit_button.button('reset');
+            // } else {
+            //     me.save_success(response, 'checking');
+            // }
         });
     },
 
