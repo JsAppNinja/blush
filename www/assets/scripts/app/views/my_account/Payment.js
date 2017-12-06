@@ -54,14 +54,15 @@ app.PaymentView = app.BaseFormView.extend({
             exp_year: $('.card-expiry-year').val(),
             name: $(".cardholder-name").val()
         }, function (status, response) {
+            me.save_success(response, 'credit');
 
-            if (response.error) {
-                var alert = me.$el.find('.submit-container .alert-danger');
-                alert.show().text(response.error.message);
-                submit_button.button('reset');
-            } else {
-                me.save_success(response, 'credit');
-            }
+            // if (response.error) {
+            //     var alert = me.$el.find('.submit-container .alert-danger');
+            //     alert.show().text(response.error.message);
+            //     submit_button.button('reset');
+            // } else {
+            //     me.save_success(response, 'credit');
+            // }
         });
     },
 
