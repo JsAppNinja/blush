@@ -71,13 +71,13 @@ app.PlanView = app.BaseStepView.extend({
     },
 
     choose_subscription: function (event) {
-        $('.alacartes').show();
+        $('.alacartes').hide();
         $('.coupon-code-container').show();
     },
 
     choose_alacarte: function (event) {
         $('.plans').hide();
-        $('.coupon-code-container').hide();
+        $('.coupon-code-container').show();
     },
 
     check_coupon_code: function (event) {
