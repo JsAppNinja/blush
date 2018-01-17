@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="form-group">
-                        <label class="sr-only" for="coupon-code">First Month Coupon Code</label>
+                        <label class="sr-only" for="coupon-code">Promo Code</label>
 
                         <div class="input-group">
                             <input type="text" class="form-control coupon-code"
