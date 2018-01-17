@@ -3,7 +3,7 @@
         <div class="coupon-code-container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3>First Month Coupon Code</h3>
+                    <h3>Promo Code</h3>
                 </div>
             </div>
             <div class="row">
@@ -13,7 +13,7 @@
 
                         <div class="input-group">
                             <input type="text" class="form-control coupon-code"
-                                   placeholder="Coupon Code">
+                                   placeholder="Code">
                             <span class="input-group-btn">
                                 <button class="btn btn-pink coupon-code-button" type="button">Apply</button>
                                 <button class="btn btn-danger coupon-code-reset-button" type="button" style="display:none">Remove</button>
