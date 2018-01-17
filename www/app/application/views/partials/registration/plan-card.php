@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <p><strong>Make sure you hit the 'apply' button to apply the coupon code to your purchase.</strong></p>
+        <p><strong>Make sure you hit the 'apply' button to apply the promo code to your purchase.</strong></p>
         <div class="row">
             <div class="col-lg-12">
                 <h3>Credit Card Information</h3>
