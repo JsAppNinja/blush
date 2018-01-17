@@ -202,40 +202,40 @@ module.exports = function (grunt) {
             }
         },
 
-        cdn: {
-            options: {
-                /** @required - root URL of your CDN (may contains sub-paths as shown below) */
-                cdn: 'https://joinblush.com',
-                /** @optional  - if provided both absolute and relative paths will be converted */
-                flatten: true,
-                /** @optional  - if provided will be added to the default supporting types */
-                supportedTypes: { 'phtml': 'html' }
-            },
-            dist: {
-                /** @required  - gets sources here, may be same as dest  */
-                cwd: '<%= app.views.includes %>/prod/',
-                /** @required  - puts results here with respect to relative paths  */
-                dest: '<%= app.views.includes %>/prod/',
-                /** @required  - files to process */
-                src: ['{,**/}*.html']
-            }
-        },
+        // cdn: {
+        //     options: {
+        //         /** @required - root URL of your CDN (may contains sub-paths as shown below) */
+        //         cdn: 'https://joinblush.com',
+        //         /** @optional  - if provided both absolute and relative paths will be converted */
+        //         flatten: true,
+        //         /** @optional  - if provided will be added to the default supporting types */
+        //         supportedTypes: { 'phtml': 'html' }
+        //     },
+        //     dist: {
+        //         /** @required  - gets sources here, may be same as dest  */
+        //         cwd: '<%= app.views.includes %>/prod/',
+        //         /** @required  - puts results here with respect to relative paths  */
+        //         dest: '<%= app.views.includes %>/prod/',
+        //         /** @required  - files to process */
+        //         src: ['{,**/}*.html']
+        //     }
+        // },
 
-        cloudfiles: {
-            dist: {
-                user: '2bmeprofessor',
-                key: '8b872a1922df16ba376d2cd02f8944f4',
-                region: 'IAD',
-                upload: [
-                    {
-                        container: 'joinblush',
-                        src: './www/assets/**/*',
-                        stripcomponents: 4,
-                        dest: 'assets/dist/'
-                    }
-                ]
-            }
-        },
+        // cloudfiles: {
+        //     dist: {
+        //         user: '2bmeprofessor',
+        //         key: '8b872a1922df16ba376d2cd02f8944f4',
+        //         region: 'IAD',
+        //         upload: [
+        //             {
+        //                 container: 'joinblush',
+        //                 src: './www/assets/**/*',
+        //                 stripcomponents: 4,
+        //                 dest: 'assets/dist/'
+        //             }
+        //         ]
+        //     }
+        // },
         setPHPConstant: {
             dist: {
                 constant: 'APPVERSION',

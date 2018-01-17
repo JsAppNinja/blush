@@ -5,7 +5,7 @@ $msg .=
     Your client <b>'.$customer->firstname.' '.$customer->lastname.'</b> has scheduled a new video session for <b>'.$start_time->format('h:i a T').' on '.pretty_date_short($event->date).'</b>
   </p>
   <p>Please double check to make sure this scheduled time works for you. If you have something else going on during that time, it means you are super popular, but it also means you need to reschedule ASAP.</p>
-  <p>Put this video session date and time in your calendar now!!! We mean now!!!!!</p>
+  <p>You will receive a reminder for this video session 26 hours before its scheduled time, but please add this to your calendar of choice.</p>
   <p>Blush you!</p>';
 include (APPPATH . '/views/emails/footer.php');
 ?>

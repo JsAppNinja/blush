@@ -1,8 +1,8 @@
 <?
 include (APPPATH . '/views/emails/header.php');
 $msg .=
-  '<p>Hey girl hey, you\'ve got mail. </p>
-  <p>Log on to your Blush account to read your new message. Hope it\'s juicy.</p>
+  '<p>Hey '.$counselor->firstname.',</p>
+  <p>You received a message from '.$customer->firstname.' '.$customer->lastname. '. Login to your Blush Dashboard to read your new message. </p>
   <p>Blush you!</p>';
 include (APPPATH . '/views/emails/footer.php');
 ?>
