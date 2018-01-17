@@ -71,7 +71,7 @@ app.PlanView = app.BaseStepView.extend({
     },
 
     choose_subscription: function (event) {
-        $('.alacartes').hide();
+        $('.alacartes').show();
         $('.coupon-code-container').show();
     },
 
