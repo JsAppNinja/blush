@@ -45,7 +45,19 @@ class Users extends REST_Controller {
         /* Allow them to set the credits field */
         $fields['credits'] = $this->put('credits', TRUE);
         $this->User->update_by_uuid($uuid, $fields);
-        json_success('Your profile has been updated successfully');
+         /** Agreeing to TOS */
+        // if($this->put('TosAgree')){
+        //     $stripe_id = $user->stripe_customer_id;
+        //     $acct = \Stripe\Account::retrieve($stripe_id);
+        //     $acct->tos_acceptance->date = time();
+        //     $acct->tos_acceptance->ip = $_SERVER['REMOTE_ADDR'];
+        //     $acct->save();
+        // }
+        // else{
+        //     json_error(strval($this->put('TosAgree')));
+        // }
+
+        json_success('Your profile has been updated successfullly');
     }
 
     public function user_post() {
