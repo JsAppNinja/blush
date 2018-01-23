@@ -218,7 +218,7 @@ class Users extends REST_Controller
                 $this->create_stripe_credit($user->uuid);
             }
         } else {
-            json_success('Your profile has been updated successfullly');
+            json_success('Your profile has been updated successfully!!');
         }
     }
 
@@ -354,7 +354,7 @@ class Users extends REST_Controller
                 json_error($error);
             }
         }
-        json_success('Your profile has been updated successfully');
+        json_success('Your profile has been updated successfully.');
     }
 
     private function create_stripe_checking($uuid)
@@ -395,7 +395,7 @@ class Users extends REST_Controller
                 json_error($error);
             }
         }
-        json_success('Your profile has been updated successfully');
+        json_success('Your profile has been updated successfully!');
     }
 
     private function update_subscription($user)
