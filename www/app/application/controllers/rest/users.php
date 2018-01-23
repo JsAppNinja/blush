@@ -194,7 +194,11 @@ class Users extends REST_Controller
 
         /** Agreeing to TOS */
         if($this->put('TosAgree')){
-            json_error("Testing 123");
+            $stripe_id = $user->stripe_customer_id;
+            $acct = \Stripe\Account::retrieve($stripe_id);
+            $acct->tos_acceptance->date = time();
+            $acct->tos_acceptance->ip = $_SERVER['REMOTE_ADDR'];
+            $acct->save();
         }
         else{
             json_error(strval($this->put('TosAgree')));
