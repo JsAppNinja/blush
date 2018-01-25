@@ -5,7 +5,6 @@
     include(APPPATH.'views/partials/my_account/includes/payment-customer.php');
     include(APPPATH.'views/partials/my_account/includes/payment-counselor.php');
     ?>
-    <
     <h4>By saving your data here you are agreeing to the Stripe Terms of Service as outlined below</h4>
     <div class="row">
         <div class="col-lg-12">
