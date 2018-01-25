@@ -194,15 +194,17 @@ class Users extends REST_Controller
 
         // /** Agreeing to TOS */
         if($this->put('TosAgree')){
+            \Stripe\Stripe::setApiKey($this->config->item('stripe_private_key'));
             $stripe_id = $user->stripe_customer_id;
             $acct = \Stripe\Account::retrieve($stripe_id);
             $acct->tos_acceptance->date = time();
             $acct->tos_acceptance->ip = $_SERVER['REMOTE_ADDR'];
             $acct->save();
             json_success("Terms Agreed");
+            return;
         }
         else{
-            json_error(strval($this->put('TosAgree')));
+           // json_error(strval($this->put('TosAgree')));
         }
 
         /** Are they changing their plan? */
@@ -219,7 +221,7 @@ class Users extends REST_Controller
                 $this->create_stripe_credit($user->uuid);
             }
         } else {
-            json_success('Your profile has been updated successfully!!');
+            json_success('Your profile has been updated successfully');
         }
     }
 
@@ -396,7 +398,7 @@ class Users extends REST_Controller
                 json_error($error);
             }
         }
-        json_success('Your profile has been updated successfully!');
+        json_success('Your profile has been updated successfully');
     }
 
     private function update_subscription($user)
