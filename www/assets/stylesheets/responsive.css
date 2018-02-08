@@ -263,7 +263,8 @@
   /* line 825, ../sass/responsive.scss */
   .newsletter .gform_footer { width: 40%; } 
   
-  #dashboard .upcoming-event { position: relative; top: 0; right: 0; width: 100%; color: #fff; background-color: #000; padding: 10px;text-align: center; } }
+  #dashboard .upcoming-event { position: relative; top: 0; right: 0; width: 100%; color: #fff; background-color: #000; padding: 10px;text-align: center; } 
+  #dashboard .upcoming-event p {text-align: center;} }
 @media screen and (max-width: 400px) { /* line 835, ../sass/responsive.scss */
   .home #lede .lede-image { height: 280px; }
   /* line 840, ../sass/responsive.scss */
