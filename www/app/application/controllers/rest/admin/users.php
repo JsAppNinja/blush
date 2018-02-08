@@ -45,7 +45,8 @@ class Users extends REST_Controller {
         /* Allow them to set the credits field */
         $fields['credits'] = $this->put('credits', TRUE);
         $this->User->update_by_uuid($uuid, $fields);
-        json_success('Your profile has been updated successfully');
+
+        json_success('Your profile has been updated successfully..');
     }
 
     public function user_post() {
