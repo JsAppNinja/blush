@@ -51,7 +51,7 @@
                 <div class="col-lg-12">
                     <% if(plan_id > 0) { %>
                         <p>If you would like to cancel your plan, please contact
-                            <a href="mailto:kali@joinblush.com">kali@joinblush.com</a>
+                            <a href="mailto:shanece@joinblush.com">shanece@joinblush.com</a>
                         </p>
                     <% } %>
                 </div>
