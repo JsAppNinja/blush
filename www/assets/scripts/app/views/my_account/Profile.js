@@ -55,7 +55,7 @@ app.ProfileView = app.BaseFormView.extend({
         if (form.valid()) {
             var attributes = form.serializeObject();
             var me = this;
-
+            console.log("attributes,", attributes);
             var submit_button = $(event.currentTarget);
             submit_button.button('loading');
             form.find('.submit-container .alert').hide();
