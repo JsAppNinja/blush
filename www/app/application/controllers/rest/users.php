@@ -189,6 +189,7 @@ class Users extends REST_Controller
                 return;
             } else {
                 $this->User->change_password($user->id, $this->put('new_password'));
+                json_success('Your profile has been updated successfully');
             }
         }
 
@@ -212,7 +213,6 @@ class Users extends REST_Controller
             $acct->tos_acceptance->date = time();
             $acct->tos_acceptance->ip = $_SERVER['REMOTE_ADDR'];
             $acct->save();
-            json_success('Your profile has been updated successfully');
         }
     }
 
