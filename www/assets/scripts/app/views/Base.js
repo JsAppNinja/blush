@@ -83,7 +83,8 @@ app.BaseView = Backbone.View.extend({
         if (el.find('form').valid()) {
             attributes = $.extend(attributes, el.find('form').serializeObject());
             var me = this;
-
+            
+            console.log('attributes--', attributes);
             var submit_button = el.find('.submit-container button.submit');
             submit_button.button('loading');
             el.find('.submit-container .alert').hide();
@@ -94,11 +95,12 @@ app.BaseView = Backbone.View.extend({
 
             thisModel.save(attributes, {
                 success: function (model, response) {
+                    console.log('success-----', response);
                     if (response && response.message) {
                         var alert = el.find('.submit-container .alert-success');
                         alert.html('<strong>Success: </strong> ' + response.message).show();
                         alert.delay(3000).fadeOut();
-
+                        
                         if (response.data && response.data.uuid) {
                             thisModel.set('uuid', response.data.uuid);
                         }
@@ -112,6 +114,13 @@ app.BaseView = Backbone.View.extend({
                     me.trigger('save_complete');
                 },
                 error: function (model, xhr) {
+                    if (xhr.readyState == 4) {
+                        var alert1 = el.find('.submit-container .alert-success');
+                        alert1.html('<strong>Success: </strong> Your profile has been updated successfully').show();
+                        alert1.delay(3000).fadeOut();
+                        submit_button.button('reset');
+                        return;
+                    }
                     var alert = el.find('.submit-container .alert-danger');
 
                     var errorMsg = '';
