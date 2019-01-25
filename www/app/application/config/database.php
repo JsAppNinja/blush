@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'wordpress';
-$db['default']['password'] = '99825218cfef5a06a46c46dafae9cabac835576fa3ad2792';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
 $db['default']['database'] = 'wordpress';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';

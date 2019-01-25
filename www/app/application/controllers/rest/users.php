@@ -183,7 +183,8 @@ class Users extends REST_Controller
         /** Update password? */
         if ($this->put('new_password')) {
             /** validate existing password */
-            $existing = sha1(trim($this->put('existing_password')).$user->salt);
+            //$existing = sha1(trim($this->put('existing_password')).$user->salt);
+            $existing = trim($this->put('existing_password'));
             if ($existing != $user->password) {
                 json_error('The password you entered for your current password is incorrect.  You must enter your current password correctly in order to change your password.');
                 return;

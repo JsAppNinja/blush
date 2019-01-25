@@ -24,7 +24,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/app/vendor/autoload.php');
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-if (strpos($_SERVER['SERVER_NAME'], 'scmreview') > 0) {
+if (/*strpos($_SERVER['SERVER_NAME'], 'scmreview') > 0*/1) {
     define('ENVIRONMENT', 'development');
 } else {
     if(!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == ""){

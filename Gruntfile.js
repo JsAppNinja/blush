@@ -247,10 +247,10 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'setPHPConstant:dist',
-        'clean:dist',
+        //'clean:dist',
         'useminPrepare',
         'compass:dist',
-        'imagemin:dist',
+        //'imagemin:dist',
         'autoprefixer:dist',
         'concat',
         'copy',

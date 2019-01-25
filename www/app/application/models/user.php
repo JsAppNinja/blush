@@ -209,7 +209,7 @@ class User extends MY_Model
         $user = $query->row();
         if ($user) {
 
-            $password = sha1($password . $user->salt);
+            //$password = sha1($password . $user->salt);
 
             if ($user->password != $password) {
                 unset($user);
@@ -290,7 +290,7 @@ class User extends MY_Model
         if (intval($id)) {
 
             $salt = $this->create_salt();
-            $password = sha1($password . $salt);
+            //$password = sha1($password . $salt);
 
             /** Update Community **/
             $data = array('password' => $password, 'salt' => $salt);
